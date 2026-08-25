@@ -1,5 +1,5 @@
 {
   "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.title": "指令加护",
-  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.description": "回合开始时，等概率地触发以下四项之一：\n获得[blue]{VigorPower}[/blue] [gold]活力[/gold]   获得[blue]{Block}[/blue] [gold]格挡[/gold]   抽[blue]{Cards}[/blue] 张牌   获得{Energy:energyIcons()}",
+  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.description": "回合开始，等概率触发以下四项之一\n获得[blue]{VigorPower}[/blue] [gold]活力[/gold]   获得[blue]{Block}[/blue] [gold]格挡[/gold]   抽[blue]{Cards}[/blue] 张牌   获得{Energy:energyIcons()}",
   "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.flavor": "在命令出口之前，加护已然就位。"
 }
