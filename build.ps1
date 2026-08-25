@@ -33,21 +33,24 @@ function Write-GodotPck {
         }
     }
 
-    # v2 header: magic(4) + version(4) + major(4) + minor(4) + patch(4)
-    #            + reserved(16) + file_count(4) = 40 bytes,
-    # then one record per file (path_len(4) + path + offset(8) + size(8) + md5(16)),
-    # then the raw file data.
-    $headerSize = 40
+    # Godot 4.5 PCK v2 layout:
+    #   header: magic(4) + version(4) + major(4) + minor(4) + patch(4)
+    #           + flags(4) + file_base(8) + reserved(64) + file_count(4)
+    #   directory: path_len(4) + path + offset(8) + size(8) + md5(16) + flags(4)
+    #   then the raw file data.
+    $headerSize = 100
     foreach ($entry in $entries) {
-        $headerSize += 4 + $utf8.GetByteCount($entry.ResPath) + 8 + 8 + 16
+        $headerSize += 4 + $utf8.GetByteCount($entry.ResPath) + 8 + 8 + 16 + 4
     }
 
-    $offset = $headerSize
+    # file_base points at the start of the data section; directory offsets are
+    # relative to it.
+    $relativeOffset = 0
     $md5 = [System.Security.Cryptography.MD5]::Create()
     foreach ($entry in $entries) {
-        $entry | Add-Member -NotePropertyName Offset -NotePropertyValue $offset
+        $entry | Add-Member -NotePropertyName Offset -NotePropertyValue $relativeOffset
         $entry | Add-Member -NotePropertyName Md5 -NotePropertyValue ($md5.ComputeHash($entry.Bytes))
-        $offset += $entry.Bytes.Length
+        $relativeOffset += $entry.Bytes.Length
     }
 
     $fs = [System.IO.File]::Create($OutputPath)
@@ -59,7 +62,9 @@ function Write-GodotPck {
             $bw.Write([uint32]4)            # engine major
             $bw.Write([uint32]5)            # engine minor
             $bw.Write([uint32]1)            # engine patch
-            $bw.Write([byte[]](New-Object byte[] 16))  # reserved
+            $bw.Write([uint32]0)            # pack flags
+            $bw.Write([uint64]$headerSize)  # file_base (start of data section)
+            $bw.Write([byte[]](New-Object byte[] 64))  # reserved
             $bw.Write([uint32]$entries.Count)
 
             foreach ($entry in $entries) {
@@ -69,6 +74,7 @@ function Write-GodotPck {
                 $bw.Write([uint64]$entry.Offset)
                 $bw.Write([uint64]$entry.Bytes.Length)
                 $bw.Write($entry.Md5)
+                $bw.Write([uint32]0)   # per-file flags
             }
 
             foreach ($entry in $entries) {
