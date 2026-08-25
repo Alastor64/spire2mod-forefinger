@@ -1,6 +1,5 @@
 {
-  "FOREFINGER_RELIC_FOREFINGER_RELIC.title": "Pointing Finger",
-  "FOREFINGER_RELIC_FOREFINGER_RELIC.description": "At the start of each turn, draw [blue]{Cards}[/blue] card.",
-  "FOREFINGER_RELIC_FOREFINGER_RELIC.flavor": "It points the way forward."
+  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.title": "Grace of the Prescript",
+  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.description": "At the start of your turn, trigger one of the following effects at random:\nGain [blue]{VigorPower}[/blue] [gold]Vigor[/gold].\nGain [blue]{Block}[/blue] [gold]Block[/gold].\nDraw [blue]{Cards}[/blue] cards.\nGain {Energy:energyIcons()}.",
+  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.flavor": "The protection is in place before the command is spoken."
 }
-
