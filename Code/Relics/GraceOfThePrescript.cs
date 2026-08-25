@@ -35,7 +35,8 @@ public sealed class GraceOfThePrescript : ModRelicTemplate
     {
         Rng rng = RitsuLibFramework.GetModPlayerRng(player, Entry.ModId, nameof(GraceOfThePrescript));
 
-        switch (rng.NextInt(EffectCount))
+        int effectIndex = rng.NextInt(EffectCount);
+        switch (effectIndex)
         {
             case 0:
                 await PowerCmd.Apply<VigorPower>(
@@ -47,8 +48,11 @@ public sealed class GraceOfThePrescript : ModRelicTemplate
             case 2:
                 await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, player);
                 break;
-            default:
+            case 3:
                 await PlayerCmd.GainEnergy(DynamicVars.Energy.IntValue, player);
+                break;
+            default:
+                Entry.Logger.Error($"指令加护收到了无效的效果编号：{effectIndex}");
                 break;
         }
     }
