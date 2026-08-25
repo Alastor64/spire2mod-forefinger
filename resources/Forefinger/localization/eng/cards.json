@@ -1,0 +1,9 @@
+{
+  "FOREFINGER_CARD_FOREFINGER_STRIKE.title": "Strike",
+  "FOREFINGER_CARD_FOREFINGER_STRIKE.description": "Deal {Damage:diff()} damage.",
+  "FOREFINGER_CARD_FOREFINGER_STRIKE.smartDescription": "Deal {Damage:diff()} damage.",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.title": "Defend",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "Gain {Block:diff()} Block.",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "Gain {Block:diff()} Block."
+}
+

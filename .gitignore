@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+.idea/
+.godot/
+local.props
+_ref/
+*.user
+*.pck

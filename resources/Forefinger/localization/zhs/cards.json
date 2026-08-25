@@ -1,0 +1,9 @@
+{
+  "FOREFINGER_CARD_FOREFINGER_STRIKE.title": "打击",
+  "FOREFINGER_CARD_FOREFINGER_STRIKE.description": "造成 {Damage:diff()} 点伤害。",
+  "FOREFINGER_CARD_FOREFINGER_STRIKE.smartDescription": "造成 {Damage:diff()} 点伤害。",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.title": "防御",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "获得 {Block:diff()} 点格挡。",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "获得 {Block:diff()} 点格挡。"
+}
+

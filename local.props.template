@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <!-- 复制本文件为 local.props 后，按本机情况修改下面两项。local.props 已在 .gitignore，不要提交。 -->
+    <Sts2Dir>D:\Program Files (x86)\steam\steamapps\common\Slay the Spire 2</Sts2Dir>
+    <Sts2DataDir>$(Sts2Dir)\data_sts2_windows_x86_64</Sts2DataDir>
+  </PropertyGroup>
+</Project>
+
