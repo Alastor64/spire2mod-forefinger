@@ -5,7 +5,6 @@ namespace Forefinger.Characters;
 
 public sealed class ForefingerRelicPool : TypeListRelicPoolModel
 {
-    public override string EnergyColorName => "Forefinger";
+    public override string EnergyColorName => "colorless";
     public override Color LabOutlineColor => ForefingerCharacter.ThemeColor;
 }
-

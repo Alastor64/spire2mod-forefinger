@@ -5,7 +5,6 @@ namespace Forefinger.Characters;
 
 public sealed class ForefingerPotionPool : TypeListPotionPoolModel
 {
-    public override string EnergyColorName => "Forefinger";
+    public override string EnergyColorName => "colorless";
     public override Color LabOutlineColor => ForefingerCharacter.ThemeColor;
 }
-
