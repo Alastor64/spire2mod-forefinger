@@ -3,6 +3,8 @@ using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using STS2RitsuLib;
 using STS2RitsuLib.Interop;
+using STS2RitsuLib.Patching.Core;
+using Forefinger.Game;
 
 namespace Forefinger;
 
@@ -21,7 +23,10 @@ public static class Entry
         Logger = RitsuLibFramework.CreateLogger(ModId);
         ModTypeDiscoveryHub.RegisterModAssembly(ModId, assembly);
 
+        var characterSelectPatcher = RitsuLibFramework.CreatePatcher(ModId, "character_select_ui");
+        characterSelectPatcher.RegisterPatch<CharacterSelectRelicDescriptionPatch>();
+        characterSelectPatcher.PatchAll();
+
         Logger.Info("Forefinger initialized.");
     }
 }
-
