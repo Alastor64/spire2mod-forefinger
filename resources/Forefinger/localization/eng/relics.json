@@ -1,5 +1,5 @@
 {
   "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.title": "Grace of the Prescript",
-  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.description": "At the start of your turn, trigger one of the following four effects at random\nGain [blue]{VigorPower}[/blue] [gold]Vigor[/gold]   Gain [blue]{Block}[/blue] [gold]Block[/gold]   Draw [blue]{Cards}[/blue] cards   Gain {Energy:energyIcons()}.",
+  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.description": "At the start of your turn, trigger one of the following four effects at random\nGain [blue]{VigorPower}[/blue] [gold]Vigor[/gold]\nGain [blue]{Block}[/blue] [gold]Block[/gold]\nDraw [blue]{Cards}[/blue] cards\nGain {Energy:energyIcons()}.",
   "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.flavor": "The protection is in place before the command is spoken."
 }
