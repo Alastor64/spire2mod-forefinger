@@ -1,14 +1,9 @@
 {
   "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.title": "The Forefinger",
   "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.titleObject": "The Forefinger",
-  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.description": "A slender survivor who always points the way forward.",
-  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.flavor": "The shortest finger, yet the first to point.",
+  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.description": "“To 〿〿〿: cut off Order's 13th toe, no deadline.” A believer of the Prescripts comes to the Spire, seeking the “Order” people speak of.",
   "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.pronounSubject": "they",
   "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.pronounObject": "them",
   "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.possessiveAdjective": "their",
-  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.pronounPossessive": "theirs",
-  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.selectMessage": "The Forefinger is ready.",
-  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.victoryMessage": "The way forward is clear.",
-  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.defeatMessage": "The way forward is lost."
+  "FOREFINGER_CHARACTER_FOREFINGER_CHARACTER.pronounPossessive": "theirs"
 }
-
