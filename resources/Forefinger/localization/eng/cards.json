@@ -9,6 +9,6 @@
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage twice.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Hand[/gold].",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.smartDescription": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage twice.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Hand[/gold].",
   "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.title": "Skim Prescript",
-  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.description": "Enchant a random Attack in your deck with [purple]Sharp[/purple] [blue]3[/blue] this combat.\nEnchant a random Skill in your deck with [purple]Nimble[/purple] [blue]3[/blue] this combat.",
-  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.smartDescription": "Enchant a random Attack in your deck with Sharp 3 this combat.\nEnchant a random Skill in your deck with Nimble 3 this combat."
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.description": "This combat\nEnchant a random Attack with [purple]Sharp[/purple] [blue]3[/blue]\nEnchant a random Skill with [purple]Nimble[/purple] [blue]3[/blue]{IfUpgraded:show:\nDraw 1 card.|}",
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.smartDescription": "This combat\nEnchant a random Attack with Sharp 3\nEnchant a random Skill with Nimble 3{IfUpgraded:show:\nDraw 1 card.|}"
 }

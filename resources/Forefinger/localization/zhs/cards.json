@@ -9,6 +9,6 @@
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "若[gold]手牌独一[/gold]，造成{CalculatedDamage:diff()}点伤害两次。\n手牌中每有1张牌，伤害+{ExtraDamage:diff()}。",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.smartDescription": "若[gold]手牌独一[/gold]，造成{CalculatedDamage:diff()}点伤害两次。\n手牌中每有1张牌，伤害+{ExtraDamage:diff()}。",
   "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.title": "指令预览",
-  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.description": "本场战斗中，随机为卡组中的一张攻击牌[gold]附魔[/gold][purple]锋利[/purple][blue]3[/blue]\n本场战斗中，随机为卡组中的一张技能牌[gold]附魔[/gold][purple]灵巧[/purple][blue]3[/blue]",
-  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.smartDescription": "本场战斗中，随机为卡组中的一张攻击牌附魔锋利3\n本场战斗中，随机为卡组中的一张技能牌附魔灵巧3"
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.description": "本场战斗中\n随机一张攻击牌[gold]附魔[/gold][purple]锋利[/purple][blue]3[/blue]\n随机一张技能牌[gold]附魔[/gold][purple]灵巧[/purple][blue]3[/blue]{IfUpgraded:show:\n抽一张牌|}",
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.smartDescription": "本场战斗中\n随机一张攻击牌附魔锋利3\n随机一张技能牌附魔灵巧3{IfUpgraded:show:\n抽一张牌|}"
 }
