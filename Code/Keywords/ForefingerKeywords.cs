@@ -7,7 +7,7 @@ namespace Forefinger.Keywords;
 // 注册后由 RitsuLib 提供悬停提示（hover tip）与本地化标题/描述。
 [RegisterOwnedCardKeyword("HandSingleton")]
 [RegisterOwnedCardKeyword("DeckSingleton")]
-public static class ForefingerKeywords
+public sealed class ForefingerKeywords
 {
     public const string HandSingletonId = "FOREFINGER_KEYWORD_HAND_SINGLETON";
     public const string DeckSingletonId = "FOREFINGER_KEYWORD_DECK_SINGLETON";

@@ -2,5 +2,5 @@
   "FOREFINGER_KEYWORD_HAND_SINGLETON.title": "Hand Singleton",
   "FOREFINGER_KEYWORD_HAND_SINGLETON.description": "No two cards in your hand are identical.",
   "FOREFINGER_KEYWORD_DECK_SINGLETON.title": "Deck Singleton",
-  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "No two cards across your draw pile, hand, play area, and discard pile are identical."
+  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "No two cards in your deck are identical."
 }
