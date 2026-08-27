@@ -1,4 +1,5 @@
 using System.Reflection;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using STS2RitsuLib;
@@ -30,6 +31,8 @@ public static class Entry
         var cardRewardPatcher = RitsuLibFramework.CreatePatcher(ModId, "card_reward");
         cardRewardPatcher.RegisterPatch<CardRewardBasicFallbackPatch>();
         cardRewardPatcher.PatchAll();
+
+        CombatManager.Instance.CombatEnded += CombatEnchantTracker.OnCombatEnded;
 
         Logger.Info("Forefinger initialized.");
     }

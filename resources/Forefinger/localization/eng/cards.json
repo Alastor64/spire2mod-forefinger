@@ -4,6 +4,11 @@
   "FOREFINGER_CARD_FOREFINGER_STRIKE.smartDescription": "Deal {Damage:diff()} damage.",
   "FOREFINGER_CARD_FOREFINGER_DEFEND.title": "Defend",
   "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "Gain {Block:diff()} Block.",
-  "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "Gain {Block:diff()} Block."
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "Gain {Block:diff()} Block.",
+  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.title": "Blade of Faith",
+  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage twice.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Hand[/gold].",
+  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.smartDescription": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage twice.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Hand[/gold].",
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.title": "Skim Prescript",
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.description": "Enchant a random Attack in your deck with [purple]Sharp[/purple] [blue]3[/blue] this combat.\nEnchant a random Skill in your deck with [purple]Nimble[/purple] [blue]3[/blue] this combat.",
+  "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.smartDescription": "Enchant a random Attack in your deck with Sharp 3 this combat.\nEnchant a random Skill in your deck with Nimble 3 this combat."
 }
-
