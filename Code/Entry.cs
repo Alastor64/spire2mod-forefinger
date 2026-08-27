@@ -27,6 +27,10 @@ public static class Entry
         characterSelectPatcher.RegisterPatch<CharacterSelectRelicDescriptionPatch>();
         characterSelectPatcher.PatchAll();
 
+        var cardRewardPatcher = RitsuLibFramework.CreatePatcher(ModId, "card_reward");
+        cardRewardPatcher.RegisterPatch<CardRewardBasicFallbackPatch>();
+        cardRewardPatcher.PatchAll();
+
         Logger.Info("Forefinger initialized.");
     }
 }
