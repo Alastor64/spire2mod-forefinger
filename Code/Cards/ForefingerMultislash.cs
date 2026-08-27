@@ -22,18 +22,11 @@ public sealed class ForefingerMultislash : ModCardTemplate
     private const int DrawPileThreshold = 7;
     private const int DrawCount = 2;
 
-    public override IEnumerable<CardKeyword> CanonicalKeywords
-    {
-        get
-        {
-            yield return ModKeywordExtensions.GetModCardKeyword(ForefingerKeywords.HandSingletonId);
-
-            if (!IsUpgraded)
-            {
-                yield return CardKeyword.Exhaust;
-            }
-        }
-    }
+    public override IEnumerable<CardKeyword> CanonicalKeywords =>
+    [
+        ModKeywordExtensions.GetModCardKeyword(ForefingerKeywords.HandSingletonId),
+        CardKeyword.Exhaust,
+    ];
 
     // 与「信仰之刃」一致：打出手牌时这张牌会进入运行区，所以发金光时把它自己排除掉。
     protected override bool ShouldGlowGoldInternal =>
@@ -78,6 +71,8 @@ public sealed class ForefingerMultislash : ModCardTemplate
 
     protected override void OnUpgrade()
     {
-        // 升级只移除「消耗」，不改变数值；关键词由 CanonicalKeywords 依据 IsUpgraded 动态生成。
+        // 关键词集合在首次访问时会被缓存，升级不会重读 CanonicalKeywords，
+        // 因此这里显式把「消耗」从本地关键词集合中移除。
+        RemoveKeyword(CardKeyword.Exhaust);
     }
 }
