@@ -4,7 +4,9 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 using Forefinger.Characters;
+using Forefinger.Keywords;
 using STS2RitsuLib.Interop.AutoRegistration;
+using STS2RitsuLib.Keywords;
 using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
@@ -16,6 +18,11 @@ namespace Forefinger.Cards;
 [RegisterCharacterStarterCard(typeof(ForefingerCharacter), 1)]
 public sealed class ForefingerBladeOfFaith : ModCardTemplate
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords =>
+    [
+        ModKeywordExtensions.GetModCardKeyword(ForefingerKeywords.HandSingletonId),
+    ];
+
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CalculationBaseVar(3m),

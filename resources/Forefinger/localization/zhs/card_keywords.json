@@ -2,5 +2,5 @@
   "FOREFINGER_KEYWORD_HAND_SINGLETON.title": "手牌独一",
   "FOREFINGER_KEYWORD_HAND_SINGLETON.description": "手中没有完全相同的牌。",
   "FOREFINGER_KEYWORD_DECK_SINGLETON.title": "卡组独一",
-  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "抽牌堆、手牌、运行区和弃牌堆的牌中，没有完全相同的牌。"
+  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "当前抽牌堆、手牌、运行区、弃牌堆的牌的总和中没有完全相同的牌。"
 }

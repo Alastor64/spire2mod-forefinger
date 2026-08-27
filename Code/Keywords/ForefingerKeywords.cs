@@ -9,4 +9,6 @@ namespace Forefinger.Keywords;
 [RegisterOwnedCardKeyword("DeckSingleton")]
 public static class ForefingerKeywords
 {
+    public const string HandSingletonId = "FOREFINGER_KEYWORD_HAND_SINGLETON";
+    public const string DeckSingletonId = "FOREFINGER_KEYWORD_DECK_SINGLETON";
 }
