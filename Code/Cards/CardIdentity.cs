@@ -38,6 +38,35 @@ internal static class CardIdentity
         return true;
     }
 
+    // 判断「这张牌被打出后，剩余手牌是否独一」。
+    // 与 IsHandSingleton 的区别：会把手牌里的 self 自己排除掉，
+    // 因为打出时它会进入运行区、不再计入判定范围。
+    public static bool IsHandSingletonExcluding(CardModel self)
+    {
+        var handPile = self.Owner?.PlayerCombatState?.Hand;
+        if (handPile is null)
+        {
+            return true;
+        }
+
+        var cards = handPile.Cards
+            .Where(card => !ReferenceEquals(card, self))
+            .ToList();
+
+        for (int i = 0; i < cards.Count; i++)
+        {
+            for (int j = i + 1; j < cards.Count; j++)
+            {
+                if (AreIdentical(cards[i], cards[j]))
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
     public static bool AreIdentical(CardModel a, CardModel b)
     {
         if (ReferenceEquals(a, b))

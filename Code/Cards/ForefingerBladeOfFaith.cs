@@ -23,12 +23,33 @@ public sealed class ForefingerBladeOfFaith : ModCardTemplate
         ModKeywordExtensions.GetModCardKeyword(ForefingerKeywords.HandSingletonId),
     ];
 
+    // 手牌独一满足时发光（金色），提示玩家此时打出能触发额外效果。
+    protected override bool ShouldGlowGoldInternal =>
+        CardIdentity.IsHandSingletonExcluding(this);
+
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CalculationBaseVar(3m),
         new ExtraDamageVar(1m),
         new CalculatedDamageVar(ValueProp.Move)
-            .WithMultiplier((card, _) => card.Owner?.PlayerCombatState?.Hand?.Cards.Count ?? 0),
+            .WithMultiplier((card, _) =>
+            {
+                if (card.Owner is null)
+                {
+                    return 0m;
+                }
+
+                // {C} 是「打出后」的手牌数：这张牌还在手里（预览）时要排除它自己，
+                // 因为打出时它会进入运行区。与原版「精确切击」计算「其他手牌」同口径。
+                var handPile = PileTypeExtensions.GetPile(PileType.Hand, card.Owner);
+                decimal handCount = handPile.Cards.Count;
+                if (card.Pile is not null && card.Pile.Type == PileType.Hand)
+                {
+                    handCount -= 1;
+                }
+
+                return Math.Max(handCount, 0);
+            }),
     ];
 
     public ForefingerBladeOfFaith()
