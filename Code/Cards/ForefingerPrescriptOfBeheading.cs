@@ -33,8 +33,7 @@ public sealed class ForefingerPrescriptOfBeheading : ModCardTemplate
         get
         {
             if (NTargetManager.Instance is { IsInSelection: true } targetManager
-                && targetManager.HoveredNode is NCreature { Entity: Creature creature }
-                && creature.IsEnemy)
+                && targetManager.HoveredNode is NCreature { Entity: Creature { IsEnemy: true } creature })
             {
                 return IsBelowHalfHp(creature);
             }
