@@ -11,11 +11,10 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
 
-// 信仰之刃：若「手牌独一」，造成 {C} 点伤害 2 次。
+// 信仰之刃：若「手牌独一」，造成 3×{C} 点伤害。
 // {C} 为手牌数（不含运行区，即不含正在打出的这张牌）。
-// 升级后基础伤害 +2：2+{C}。
+// 升级后伤害变为 4×{C}。
 [RegisterCard(typeof(ForefingerCardPool))]
-[RegisterCharacterStarterCard(typeof(ForefingerCharacter), 1)]
 public sealed class ForefingerBladeOfFaith : ModCardTemplate
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
@@ -30,7 +29,7 @@ public sealed class ForefingerBladeOfFaith : ModCardTemplate
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CalculationBaseVar(0m),
-        new ExtraDamageVar(1m),
+        new ExtraDamageVar(3m),
         new CalculatedDamageVar(ValueProp.Move)
             .WithMultiplier((card, _) =>
             {
@@ -53,7 +52,7 @@ public sealed class ForefingerBladeOfFaith : ModCardTemplate
     ];
 
     public ForefingerBladeOfFaith()
-        : base(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy, true)
+        : base(1, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy, true)
     {
     }
 
@@ -69,12 +68,11 @@ public sealed class ForefingerBladeOfFaith : ModCardTemplate
         await DamageCmd.Attack(DynamicVars.CalculatedDamage)
             .FromCard(this)
             .Targeting(cardPlay.Target)
-            .WithHitCount(2)
             .Execute(choiceContext);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.CalculationBase.UpgradeValueBy(2m);
+        DynamicVars.ExtraDamage.UpgradeValueBy(1m);
     }
 }

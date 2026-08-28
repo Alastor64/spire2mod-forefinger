@@ -6,8 +6,8 @@
   "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "Gain {Block:diff()} Block.",
   "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "Gain {Block:diff()} Block.",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.title": "Blade of Faith",
-  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage twice.",
-  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.smartDescription": "If Hand Singleton, deal {CalculatedDamage:diff()} damage twice.",
+  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage.",
+  "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.smartDescription": "If Hand Singleton, deal {CalculatedDamage:diff()} damage.",
   "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.title": "Skim Prescript",
   "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.description": "This combat\nEnchant a random Attack with [purple]Sharp[/purple] [blue]1[/blue]\nEnchant a random Skill with [purple]Nimble[/purple] [blue]1[/blue]{IfUpgraded:show:\nDraw 1 card.|}",
   "FOREFINGER_CARD_FOREFINGER_SKIM_PRESCRIPT.smartDescription": "This combat\nEnchant a random Attack with Sharp 1\nEnchant a random Skill with Nimble 1{IfUpgraded:show:\nDraw 1 card.|}",
@@ -19,5 +19,8 @@
   "FOREFINGER_CARD_FOREFINGER_ELIMINATE.smartDescription": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nFatal: All players and their minions gain {StrengthPower:diff()} Strength.",
   "FOREFINGER_CARD_FOREFINGER_PRESCRIPT_OF_BEHEADING.title": "Prescript of Beheading",
   "FOREFINGER_CARD_FOREFINGER_PRESCRIPT_OF_BEHEADING.description": "Deal {CalculatedDamage:diff()} damage. If the target's HP is below half of its Max HP, deal double damage.",
-  "FOREFINGER_CARD_FOREFINGER_PRESCRIPT_OF_BEHEADING.smartDescription": "Deal {CalculatedDamage:diff()} damage. If the target's HP is below half of its Max HP, deal double damage."
+  "FOREFINGER_CARD_FOREFINGER_PRESCRIPT_OF_BEHEADING.smartDescription": "Deal {CalculatedDamage:diff()} damage. If the target's HP is below half of its Max HP, deal double damage.",
+  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.title": "To Where the Prescript Points",
+  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.description": "Deal {Damage:diff()} damage once.\nIf [gold]Hand Singleton[/gold], deal damage once more.",
+  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.smartDescription": "Deal {Damage:diff()} damage once.\nIf Hand Singleton, deal damage once more."
 }
