@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.ValueProps;
 using Forefinger.Characters;
 using STS2RitsuLib.Interop.AutoRegistration;
@@ -25,16 +26,19 @@ public sealed class ForefingerPrescriptOfBeheading : ModCardTemplate
             .WithMultiplier((_, target) => IsBelowHalfHp(target) ? 1m : 0m),
     ];
 
+    // 悬停发光：出牌瞄准时，按鼠标当前指向的敌人判断（参考「眼部攻击」）。
+    // HoveredNode 只在悬停可瞄准生物时更新，未悬停或悬停玩家时返回 false。
     protected override bool ShouldGlowGoldInternal
     {
         get
         {
-            if (CombatState is not { } combatState)
+            var hoveredNode = NTargetManager.Instance?.HoveredNode;
+            if (hoveredNode is not NCreature { Entity: Creature creature } || !creature.IsEnemy)
             {
                 return false;
             }
 
-            return combatState.HittableEnemies.Any(IsBelowHalfHp);
+            return IsBelowHalfHp(creature);
         }
     }
 
