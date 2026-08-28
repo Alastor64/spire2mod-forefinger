@@ -32,6 +32,10 @@ public static class Entry
         cardRewardPatcher.RegisterPatch<CardRewardBasicFallbackPatch>();
         cardRewardPatcher.PatchAll();
 
+        var handGlowPatcher = RitsuLibFramework.CreatePatcher(ModId, "hand_glow");
+        handGlowPatcher.RegisterPatch<HandGlowRefreshPatch>();
+        handGlowPatcher.PatchAll();
+
         CombatManager.Instance.CombatEnded += CombatEnchantTracker.OnCombatEnded;
 
         Logger.Info("Forefinger initialized.");
