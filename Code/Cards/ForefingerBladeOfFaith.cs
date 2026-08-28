@@ -11,9 +11,9 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
 
-// 信仰之刃：若「手牌独一」，造成 3+{C} 点伤害 2 次。
+// 信仰之刃：若「手牌独一」，造成 {C} 点伤害 2 次。
 // {C} 为手牌数（不含运行区，即不含正在打出的这张牌）。
-// 升级后 {C} 的系数由 1 变为 2：3+{C}*2。
+// 升级后基础伤害 +2：2+{C}。
 [RegisterCard(typeof(ForefingerCardPool))]
 [RegisterCharacterStarterCard(typeof(ForefingerCharacter), 1)]
 public sealed class ForefingerBladeOfFaith : ModCardTemplate
@@ -29,7 +29,7 @@ public sealed class ForefingerBladeOfFaith : ModCardTemplate
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new CalculationBaseVar(3m),
+        new CalculationBaseVar(0m),
         new ExtraDamageVar(1m),
         new CalculatedDamageVar(ValueProp.Move)
             .WithMultiplier((card, _) =>
@@ -75,6 +75,6 @@ public sealed class ForefingerBladeOfFaith : ModCardTemplate
 
     protected override void OnUpgrade()
     {
-        DynamicVars.ExtraDamage.UpgradeValueBy(1m);
+        DynamicVars.CalculationBase.UpgradeValueBy(2m);
     }
 }

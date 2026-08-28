@@ -12,8 +12,8 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
 
-// 指令预览：固有，打出后随机给卡组中一张未附魔的攻击牌附「锋利 3」、
-// 一张未附魔的技能牌附「灵巧 3」，然后消耗。升级后额外抽一张牌。
+// 指令预览：固有，打出后随机给卡组中一张未附魔的攻击牌附「锋利 1」、
+// 一张未附魔的技能牌附「灵巧 1」，然后消耗。升级后额外抽一张牌。
 // 附魔仅在本场战斗内生效，战斗结束统一清除。
 [RegisterCard(typeof(ForefingerCardPool))]
 [RegisterCharacterStarterCard(typeof(ForefingerCharacter), 1)]
@@ -84,7 +84,7 @@ public sealed class ForefingerSkimPrescript : ModCardTemplate
             return;
         }
 
-        var enchantment = CardCmd.Enchant<T>(target, 3m);
+        var enchantment = CardCmd.Enchant<T>(target, 1m);
         if (enchantment is not null)
         {
             CombatEnchantTracker.Track(combatState, target);

@@ -11,15 +11,14 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
 
-// 乱剑劈砍：随机对敌人造成 4 点伤害 2 次；若「手牌独一」，获得 2 点能量；
-// 若抽牌堆至少有 7 张牌，抽 2 张牌。基础版有「消耗」，升级后移除。
+// 乱剑劈砍：随机对敌人造成 1 点伤害 2 次；若「手牌独一」，获得 1 点能量；
+// 抽 2 张牌。基础版有「消耗」，升级后移除。
 [RegisterCard(typeof(ForefingerCardPool))]
 public sealed class ForefingerMultislash : ModCardTemplate
 {
-    private const int BaseDamage = 4;
+    private const int BaseDamage = 1;
     private const int HitCount = 2;
-    private const int EnergyGain = 2;
-    private const int DrawPileThreshold = 7;
+    private const int EnergyGain = 1;
     private const int DrawCount = 2;
 
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
@@ -63,10 +62,7 @@ public sealed class ForefingerMultislash : ModCardTemplate
             await PlayerCmd.GainEnergy(DynamicVars.Energy.IntValue, Owner);
         }
 
-        if (Owner.PlayerCombatState?.DrawPile?.Cards.Count >= DrawPileThreshold)
-        {
-            await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, Owner);
-        }
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, Owner);
     }
 
     protected override void OnUpgrade()
