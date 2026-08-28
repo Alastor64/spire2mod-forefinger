@@ -11,9 +11,9 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
 
-// 信仰之刃：若「手牌独一」，造成 3×{C} 点伤害。
+// 信仰之刃：若「手牌独一」，造成 3×{C} 点伤害；每有一张手牌就使伤害加 3。
 // {C} 为手牌数（不含运行区，即不含正在打出的这张牌）。
-// 升级后伤害变为 4×{C}。
+// 升级后每张手牌 3→4，即伤害变为 4×{C}。
 [RegisterCard(typeof(ForefingerCardPool))]
 public sealed class ForefingerBladeOfFaith : ModCardTemplate
 {
