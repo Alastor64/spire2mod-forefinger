@@ -26,19 +26,25 @@ public sealed class ForefingerPrescriptOfBeheading : ModCardTemplate
             .WithMultiplier((_, target) => IsBelowHalfHp(target) ? 1m : 0m),
     ];
 
-    // 悬停发光：出牌瞄准时，按鼠标当前指向的敌人判断（参考「眼部攻击」）。
-    // HoveredNode 只在悬停可瞄准生物时更新，未悬停或悬停玩家时返回 false。
+    // 发光规则：未选中此卡时，看是否存在满足条件的敌人；选中（瞄准中）且悬停着
+    // 敌人时，只看悬停的那一个；选中但没有悬停敌人时，仍看是否存在满足条件的敌人。
     protected override bool ShouldGlowGoldInternal
     {
         get
         {
-            var hoveredNode = NTargetManager.Instance?.HoveredNode;
-            if (hoveredNode is not NCreature { Entity: Creature creature } || !creature.IsEnemy)
+            if (NTargetManager.Instance is { IsInSelection: true } targetManager
+                && targetManager.HoveredNode is NCreature { Entity: Creature creature }
+                && creature.IsEnemy)
+            {
+                return IsBelowHalfHp(creature);
+            }
+
+            if (CombatState is not { } combatState)
             {
                 return false;
             }
 
-            return IsBelowHalfHp(creature);
+            return combatState.HittableEnemies.Any(IsBelowHalfHp);
         }
     }
 

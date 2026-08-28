@@ -33,23 +33,6 @@ public sealed class ForefingerEliminate : ModCardTemplate
     private static bool IsFatalEligible(Creature creature) =>
         creature.Powers.All(power => power.ShouldOwnerDeathTriggerFatal());
 
-    protected override bool ShouldGlowGoldInternal
-    {
-        get
-        {
-            if (CombatState is not { } combatState)
-            {
-                return false;
-            }
-
-            // 这里用基础伤害估算斩杀可能，仅作为手牌发光的提示；实际结算由伤害命令负责。
-            decimal totalDamage = DynamicVars.Damage.BaseValue * HitCount;
-            return combatState.HittableEnemies.Any(enemy =>
-                IsFatalEligible(enemy) &&
-                enemy.CurrentHp <= Math.Max(0m, totalDamage - enemy.Block));
-        }
-    }
-
     public ForefingerEliminate()
         : base(2, CardType.Attack, CardRarity.Common, TargetType.AllEnemies, true)
     {
