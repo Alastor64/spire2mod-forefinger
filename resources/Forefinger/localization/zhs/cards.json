@@ -27,6 +27,6 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.description": "若[gold]手牌独一[/gold]，给予{FrailPower:diff()}层[gold]脆弱[/gold]，{WeakPower:diff()}层[gold]虚弱[/gold]，{VulnerablePower:diff()}层[gold]易伤[/gold]",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.smartDescription": "若手牌独一，给予{FrailPower:diff()}层脆弱，{WeakPower:diff()}层虚弱，{VulnerablePower:diff()}层易伤",
   "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.title": "苦行之刃",
-  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.description": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次\n若[gold]卡组独一[/gold]：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命",
-  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次\n若卡组独一：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命"
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.description": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次（当前卡组中每有一张牌使伤害+1）\n若[gold]卡组独一[/gold]：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命",
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次（当前卡组中每有一张牌使伤害+1）\n若卡组独一：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命"
 }
