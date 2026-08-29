@@ -1,3 +1,4 @@
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
@@ -67,6 +68,43 @@ internal static class CardIdentity
         return true;
     }
 
+    // 判断当前卡组（抽牌堆+手牌+运行区+弃牌堆，不含消耗堆）是否独一。
+    // 打出「苦行之刃」时本牌从手牌进入运行区，两处都计入卡组，判定结果与在手牌时一致。
+    public static bool IsDeckSingleton(Player player)
+    {
+        var playerCombatState = player.PlayerCombatState;
+        if (playerCombatState is null)
+        {
+            return true;
+        }
+
+        var deck = GetDeckCards(playerCombatState);
+        for (int i = 0; i < deck.Count; i++)
+        {
+            for (int j = i + 1; j < deck.Count; j++)
+            {
+                if (AreIdentical(deck[i], deck[j]))
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    // {CD}：当前卡组牌数 = 抽牌堆+手牌+运行区+弃牌堆（不含消耗堆），
+    // 与 keywords.md 中 [卡组独一]/{CD} 的定义一致。
+    public static int GetDeckCount(Player? player)
+    {
+        if (player?.PlayerCombatState is not { } playerCombatState)
+        {
+            return 0;
+        }
+
+        return GetDeckCards(playerCombatState).Count;
+    }
+
     public static bool AreIdentical(CardModel a, CardModel b)
     {
         if (ReferenceEquals(a, b))
@@ -128,5 +166,23 @@ internal static class CardIdentity
         }
 
         return true;
+    }
+
+    private static List<CardModel> GetDeckCards(PlayerCombatState playerCombatState)
+    {
+        var deck = new List<CardModel>();
+        AddPile(deck, playerCombatState.DrawPile);
+        AddPile(deck, playerCombatState.Hand);
+        AddPile(deck, playerCombatState.PlayPile);
+        AddPile(deck, playerCombatState.DiscardPile);
+        return deck;
+    }
+
+    private static void AddPile(List<CardModel> cards, CardPile? pile)
+    {
+        if (pile is not null)
+        {
+            cards.AddRange(pile.Cards);
+        }
     }
 }
