@@ -26,7 +26,7 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.title": "Execute",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.description": "If [gold]Hand Singleton[/gold], apply {FrailPower:diff()} [gold]Frail[/gold], {WeakPower:diff()} [gold]Weak[/gold], {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.smartDescription": "If Hand Singleton, apply {FrailPower:diff()} Frail, {WeakPower:diff()} Weak, {VulnerablePower:diff()} Vulnerable.",
-  "FOREFINGER_CARD_FOREFINGER_PROSYLETE_BLADE.title": "Proselyte Blade",
-  "FOREFINGER_CARD_FOREFINGER_PROSYLETE_BLADE.description": "Deal {CalculatedDamage:diff()} damage to a random enemy once.\nIf [gold]Deck Singleton[/gold]:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP.",
-  "FOREFINGER_CARD_FOREFINGER_PROSYLETE_BLADE.smartDescription": "Deal {CalculatedDamage:diff()} damage to a random enemy once.\nIf Deck Singleton:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP."
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.title": "Proselyte Blade",
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.description": "Deal {CalculatedDamage:diff()} damage to a random enemy once.\nIf [gold]Deck Singleton[/gold]:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP.",
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "Deal {CalculatedDamage:diff()} damage to a random enemy once.\nIf Deck Singleton:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP."
 }
