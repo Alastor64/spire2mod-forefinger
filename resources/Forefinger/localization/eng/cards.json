@@ -22,5 +22,8 @@
   "FOREFINGER_CARD_FOREFINGER_PRESCRIPT_OF_BEHEADING.smartDescription": "Deal {CalculatedDamage:diff()} damage. If the target's HP is below half of its Max HP, deal double damage.",
   "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.title": "To Where the Prescript Points",
   "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.description": "Deal {Damage:diff()} damage once.\nIf [gold]Hand Singleton[/gold], deal damage once more.",
-  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.smartDescription": "Deal {Damage:diff()} damage once.\nIf Hand Singleton, deal damage once more."
+  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.smartDescription": "Deal {Damage:diff()} damage once.\nIf Hand Singleton, deal damage once more.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE.title": "Execute",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE.description": "If [gold]Hand Singleton[/gold], apply {FrailPower:diff()} [gold]Frail[/gold], {WeakPower:diff()} [gold]Weak[/gold], {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE.smartDescription": "If Hand Singleton, apply {FrailPower:diff()} Frail, {WeakPower:diff()} Weak, {VulnerablePower:diff()} Vulnerable."
 }

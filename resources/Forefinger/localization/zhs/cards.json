@@ -22,5 +22,8 @@
   "FOREFINGER_CARD_FOREFINGER_PRESCRIPT_OF_BEHEADING.smartDescription": "造成{CalculatedDamage:diff()}点伤害\n若目标生命值低于其最大生命值的一半，伤害翻倍",
   "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.title": "指令所向",
   "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.description": "造成{Damage:diff()}点伤害1次\n若[gold]手牌独一[/gold]，额外造成1次伤害",
-  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.smartDescription": "造成{Damage:diff()}点伤害1次\n若手牌独一，额外造成1次伤害"
+  "FOREFINGER_CARD_FOREFINGER_TO_WHERE_THE_PRESCRIPT_POINTS.smartDescription": "造成{Damage:diff()}点伤害1次\n若手牌独一，额外造成1次伤害",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE.title": "残酷刑罚",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE.description": "若[gold]手牌独一[/gold]，给予{FrailPower:diff()}层[gold]脆弱[/gold]，{WeakPower:diff()}层[gold]虚弱[/gold]，{VulnerablePower:diff()}层[gold]易伤[/gold]",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE.smartDescription": "若手牌独一，给予{FrailPower:diff()}层脆弱，{WeakPower:diff()}层虚弱，{VulnerablePower:diff()}层易伤"
 }
