@@ -1,5 +1,8 @@
 {
   "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.title": "Grace of the Prescript",
   "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.description": "At the start of your turn, trigger one of the following four effects at random\nGain [blue]{VigorPower}[/blue] [gold]Vigor[/gold]\nGain [blue]{Block}[/blue] [gold]Block[/gold]\nDraw [blue]{Cards}[/blue] cards\nGain {Energy:energyIcons()}.",
-  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.flavor": "Doesn't really give much Block, does it?"
+  "FOREFINGER_RELIC_GRACE_OF_THE_PRESCRIPT.flavor": "Doesn't really give much Block, does it?",
+  "FOREFINGER_RELIC_FOREFINGER_KARMA.title": "Karma",
+  "FOREFINGER_RELIC_FOREFINGER_KARMA.description": "When [gold]Karma[/gold] reaches 20...",
+  "FOREFINGER_RELIC_FOREFINGER_KARMA.flavor": "This faith is pure chaos."
 }

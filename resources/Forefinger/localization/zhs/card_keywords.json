@@ -2,5 +2,15 @@
   "FOREFINGER_KEYWORD_HAND_SINGLETON.title": "手牌独一",
   "FOREFINGER_KEYWORD_HAND_SINGLETON.description": "手中没有完全相同的牌",
   "FOREFINGER_KEYWORD_DECK_SINGLETON.title": "卡组独一",
-  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "当前卡组中没有完全相同的牌"
+  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "当前卡组中没有完全相同的牌",
+  "FOREFINGER_KEYWORD_PRESCRIPT.title": "指令",
+  "FOREFINGER_KEYWORD_PRESCRIPT.description": "指令池中的卡牌",
+  "FOREFINGER_KEYWORD_DEADLINE.title": "指令期限",
+  "FOREFINGER_KEYWORD_DEADLINE.description": "费用不可改变\n被消耗时，获得1层解禁中\n若未能在倒计时结束前被消耗，承受业报",
+  "FOREFINGER_KEYWORD_KARMA.title": "业报",
+  "FOREFINGER_KEYWORD_KARMA.description": "任何违反指令的行为都瞒不过指令",
+  "FOREFINGER_KEYWORD_UNLOCKING.title": "解禁中",
+  "FOREFINGER_KEYWORD_UNLOCKING.description": "若至少有7层，获得剑刃解放\n回合结束时层数减1",
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.title": "剑刃解放",
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "获得1点力量与1点敏捷"
 }

@@ -28,5 +28,11 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.smartDescription": "If Hand Singleton, apply {FrailPower:diff()} Frail, {WeakPower:diff()} Weak, {VulnerablePower:diff()} Vulnerable.",
   "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.title": "Proselyte Blade",
   "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.description": "Deal {CalculatedDamage:diff()} damage to a random enemy once (each card in your current deck adds +1 damage).\nIf [gold]Deck Singleton[/gold]:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP.",
-  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "Deal {CalculatedDamage:diff()} damage to a random enemy once (each card in your current deck adds +1 damage).\nIf Deck Singleton:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP."
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "Deal {CalculatedDamage:diff()} damage to a random enemy once (each card in your current deck adds +1 damage).\nIf Deck Singleton:\nGain {Energy:energyIcons()}.\nDeal {Repeat:diff()} additional damage.\nLose {HpLoss:diff()} HP.",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.title": "Will of the Prescript",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} [gold]Block[/gold].\nIf [gold]Hand Singleton[/gold], add an [gold]Execute Skim[/gold] to your hand next turn.",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.smartDescription": "Deal {Damage:diff()} damage.\nGain {Block:diff()} Block.\nIf Hand Singleton, add an Execute Skim to your hand next turn.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.title": "Execute Skim",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nThe target draws {Cards:diff()} cards.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "Deadline {Deadline}.\nThe target draws {Cards:diff()} cards."
 }

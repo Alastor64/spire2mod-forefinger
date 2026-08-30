@@ -2,5 +2,15 @@
   "FOREFINGER_KEYWORD_HAND_SINGLETON.title": "Hand Singleton",
   "FOREFINGER_KEYWORD_HAND_SINGLETON.description": "No two cards in your hand are identical.",
   "FOREFINGER_KEYWORD_DECK_SINGLETON.title": "Deck Singleton",
-  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "No two cards in your deck are identical."
+  "FOREFINGER_KEYWORD_DECK_SINGLETON.description": "No two cards in your deck are identical.",
+  "FOREFINGER_KEYWORD_PRESCRIPT.title": "Prescript",
+  "FOREFINGER_KEYWORD_PRESCRIPT.description": "A card in the Prescript pool.",
+  "FOREFINGER_KEYWORD_DEADLINE.title": "Deadline",
+  "FOREFINGER_KEYWORD_DEADLINE.description": "Its cost cannot change.\nWhen Exhausted, gain 1 Unlocking.\nIf not Exhausted before the countdown ends, suffer Karma.",
+  "FOREFINGER_KEYWORD_KARMA.title": "Karma",
+  "FOREFINGER_KEYWORD_KARMA.description": "No act against the Prescript goes unnoticed.",
+  "FOREFINGER_KEYWORD_UNLOCKING.title": "Unlocking",
+  "FOREFINGER_KEYWORD_UNLOCKING.description": "If you have at least 7 stacks, gain Blade Unlocked.\nLose 1 stack at the end of your turn.",
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.title": "Blade Unlocked",
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "Gain 1 Strength and 1 Dexterity."
 }

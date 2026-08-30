@@ -36,6 +36,10 @@ public static class Entry
         handGlowPatcher.RegisterPatch<HandGlowRefreshPatch>();
         handGlowPatcher.PatchAll();
 
+        var deadlineCostPatcher = RitsuLibFramework.CreatePatcher(ModId, "deadline_cost");
+        deadlineCostPatcher.RegisterPatch<DeadlineCostPatch>();
+        deadlineCostPatcher.PatchAll();
+
         CombatManager.Instance.CombatEnded += CombatEnchantTracker.OnCombatEnded;
 
         Logger.Info("Forefinger initialized.");

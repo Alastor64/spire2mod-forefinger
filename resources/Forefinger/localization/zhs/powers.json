@@ -1,0 +1,8 @@
+{
+  "FOREFINGER_POWER_FOREFINGER_UNLOCKING.title": "解禁中",
+  "FOREFINGER_POWER_FOREFINGER_UNLOCKING.description": "若至少有7层，获得[gold]剑刃解放[/gold]\n回合结束时层数减1",
+  "FOREFINGER_POWER_FOREFINGER_BLADE_UNLOCKED.title": "剑刃解放",
+  "FOREFINGER_POWER_FOREFINGER_BLADE_UNLOCKED.description": "获得1点[gold]力量[/gold]与1点[gold]敏捷[/gold]",
+  "FOREFINGER_POWER_FOREFINGER_NEXT_TURN_PRESCRIPT.title": "指令之意",
+  "FOREFINGER_POWER_FOREFINGER_NEXT_TURN_PRESCRIPT.description": "下回合开始时加入一张执行-检索。"
+}

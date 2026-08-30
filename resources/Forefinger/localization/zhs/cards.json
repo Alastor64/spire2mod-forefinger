@@ -28,5 +28,11 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE.smartDescription": "若手牌独一，给予{FrailPower:diff()}层脆弱，{WeakPower:diff()}层虚弱，{VulnerablePower:diff()}层易伤",
   "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.title": "苦行之刃",
   "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.description": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次（当前卡组中每有一张牌使伤害+1）\n若[gold]卡组独一[/gold]：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命",
-  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次（当前卡组中每有一张牌使伤害+1）\n若卡组独一：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命"
+  "FOREFINGER_CARD_FOREFINGER_PROSELYTE_BLADE.smartDescription": "随机对敌人造成{CalculatedDamage:diff()}点伤害1次（当前卡组中每有一张牌使伤害+1）\n若卡组独一：\n获得{Energy:energyIcons()}\n额外造成{Repeat:diff()}次伤害\n失去{HpLoss:diff()}生命",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.title": "指令之意",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.description": "造成{Damage:diff()}点伤害\n获得{Block:diff()}点[gold]格挡[/gold]\n若[gold]手牌独一[/gold]，下回合向手中加入一张[gold]执行-检索[/gold]",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.smartDescription": "造成{Damage:diff()}点伤害\n获得{Block:diff()}点格挡\n若手牌独一，下回合向手中加入一张执行-检索",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.title": "执行-检索",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n使目标抽{Cards:diff()}张牌",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "指令期限{Deadline}\n使目标抽{Cards:diff()}张牌"
 }
