@@ -63,13 +63,12 @@ public sealed class ForefingerWillOfThePrescript : ModCardTemplate
             return;
         }
 
-        await PowerCmd.Apply<ForefingerNextTurnPrescript>(
+        await ForefingerNextExecution.Apply(
             choiceContext,
             creature,
-            1m,
-            creature,
-            this,
-            silent: true);
+            new ForefingerExecuteSkim(),
+            1,
+            this);
     }
 
     protected override void OnUpgrade()

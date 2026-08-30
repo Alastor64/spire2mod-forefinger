@@ -3,6 +3,6 @@
   "FOREFINGER_POWER_FOREFINGER_UNLOCKING.description": "If you have at least 7 stacks, gain [gold]Blade Unlocked[/gold].\nLose 1 stack at the end of your turn.",
   "FOREFINGER_POWER_FOREFINGER_BLADE_UNLOCKED.title": "Blade Unlocked",
   "FOREFINGER_POWER_FOREFINGER_BLADE_UNLOCKED.description": "Gain 1 [gold]Strength[/gold] and 1 [gold]Dexterity[/gold].",
-  "FOREFINGER_POWER_FOREFINGER_NEXT_TURN_PRESCRIPT.title": "Will of the Prescript",
-  "FOREFINGER_POWER_FOREFINGER_NEXT_TURN_PRESCRIPT.description": "Add an Execute Skim at the start of your next turn."
+  "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.title": "Next Execution",
+  "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.description": "Next turn, add [blue]{Amount}[/blue] [gold]{Card}[/gold] into your [gold]Hand[/gold]."
 }

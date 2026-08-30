@@ -12,5 +12,7 @@
   "FOREFINGER_KEYWORD_UNLOCKING.title": "Unlocking",
   "FOREFINGER_KEYWORD_UNLOCKING.description": "If you have at least 7 stacks, gain Blade Unlocked.\nLose 1 stack at the end of your turn.",
   "FOREFINGER_KEYWORD_BLADE_UNLOCKED.title": "Blade Unlocked",
-  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "Gain 1 Strength and 1 Dexterity."
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "Gain 1 Strength and 1 Dexterity.",
+  "FOREFINGER_KEYWORD_NEXT_EXECUTION.title": "Next Execution",
+  "FOREFINGER_KEYWORD_NEXT_EXECUTION.description": "At the start of your next turn, add the recorded Prescript card to your hand once per stack."
 }

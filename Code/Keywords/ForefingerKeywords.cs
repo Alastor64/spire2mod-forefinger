@@ -12,6 +12,7 @@ namespace Forefinger.Keywords;
 [RegisterOwnedCardKeyword("Karma")]
 [RegisterOwnedCardKeyword("Unlocking")]
 [RegisterOwnedCardKeyword("BladeUnlocked")]
+[RegisterOwnedCardKeyword("NextExecution")]
 public sealed class ForefingerKeywords
 {
     public const string HandSingletonId = "FOREFINGER_KEYWORD_HAND_SINGLETON";
@@ -21,4 +22,5 @@ public sealed class ForefingerKeywords
     public const string KarmaId = "FOREFINGER_KEYWORD_KARMA";
     public const string UnlockingId = "FOREFINGER_KEYWORD_UNLOCKING";
     public const string BladeUnlockedId = "FOREFINGER_KEYWORD_BLADE_UNLOCKED";
+    public const string NextExecutionId = "FOREFINGER_KEYWORD_NEXT_EXECUTION";
 }
