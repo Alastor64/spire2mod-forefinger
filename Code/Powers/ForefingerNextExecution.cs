@@ -90,6 +90,7 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
         {
             if (ModelDb.GetByIdOrNull<CardModel>(cardId) is not { } template)
             {
+                LogToFile($"BeforeHandDraw: 找不到记录的卡牌 ID {cardId}，本回合跳过加入。");
                 Entry.Logger.Error($"ForefingerNextExecution: 找不到记录的卡牌 ID {cardId}，本回合跳过加入。");
                 return;
             }
@@ -115,6 +116,7 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
         catch (Exception ex)
         {
             // 兜底：无论生成/加入流程抛什么异常，都记录并继续回合，避免抽牌前钩子卡死游戏。
+            LogToFile($"BeforeHandDraw 异常: {ex}");
             Entry.Logger.Error($"ForefingerNextExecution.BeforeHandDraw 异常：{ex}");
         }
         finally
@@ -131,6 +133,26 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
     private Data GetData()
     {
         return GetInternalData<Data>();
+    }
+
+    // 诊断日志：写入 %LOCALAPPDATA%\Forefinger\forefinger-debug.log，
+    // 便于定位生成/加入卡牌流程中的真实异常。
+    private static void LogToFile(string message)
+    {
+        try
+        {
+            var dir = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "Forefinger");
+            Directory.CreateDirectory(dir);
+            File.AppendAllText(
+                Path.Combine(dir, "forefinger-debug.log"),
+                $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {message}{Environment.NewLine}");
+        }
+        catch
+        {
+            // 日志写入失败不应影响游戏流程。
+        }
     }
 
     private sealed class Data
