@@ -80,32 +80,47 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
             return;
         }
 
-        if (SelectedCardId is not { } cardId || Amount <= 0
-            || ModelDb.GetByIdOrNull<CardModel>(cardId) is not { } template)
+        if (SelectedCardId is not { } cardId || Amount <= 0)
         {
             await PowerCmd.Remove(this);
             return;
         }
 
-        var rng = RitsuLibFramework.GetModPlayerRng(
-            player,
-            Entry.ModId,
-            nameof(ForefingerNextExecution));
-
-        var generated = CardFactory
-            .GetForCombat(player, [template], Amount, rng)
-            .ToList();
-
-        if (generated.Count > 0)
+        try
         {
-            await CardPileCmd.AddGeneratedCardsToCombat(
-                generated,
-                PileType.Hand,
-                player,
-                CardPilePosition.Random);
-        }
+            if (ModelDb.GetByIdOrNull<CardModel>(cardId) is not { } template)
+            {
+                Entry.Logger.Error($"ForefingerNextExecution: 找不到记录的卡牌 ID {cardId}，本回合跳过加入。");
+                return;
+            }
 
-        await PowerCmd.Remove(this);
+            var rng = RitsuLibFramework.GetModPlayerRng(
+                player,
+                Entry.ModId,
+                nameof(ForefingerNextExecution));
+
+            var generated = CardFactory
+                .GetForCombat(player, [template], Amount, rng)
+                .ToList();
+
+            if (generated.Count > 0)
+            {
+                await CardPileCmd.AddGeneratedCardsToCombat(
+                    generated,
+                    PileType.Hand,
+                    player,
+                    CardPilePosition.Random);
+            }
+        }
+        catch (Exception ex)
+        {
+            // 兜底：无论生成/加入流程抛什么异常，都记录并继续回合，避免抽牌前钩子卡死游戏。
+            Entry.Logger.Error($"ForefingerNextExecution.BeforeHandDraw 异常：{ex}");
+        }
+        finally
+        {
+            await PowerCmd.Remove(this);
+        }
     }
 
     protected override object InitInternalData()
