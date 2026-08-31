@@ -12,7 +12,5 @@
   "FOREFINGER_KEYWORD_UNLOCKING.title": "解禁中",
   "FOREFINGER_KEYWORD_UNLOCKING.description": "若至少有7层，获得剑刃解放\n回合结束时层数减1",
   "FOREFINGER_KEYWORD_BLADE_UNLOCKED.title": "剑刃解放",
-  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "获得1点力量与1点敏捷",
-  "FOREFINGER_KEYWORD_NEXT_EXECUTION.title": "下回合执行",
-  "FOREFINGER_KEYWORD_NEXT_EXECUTION.description": "下回合开始时，将效果层数张记录的指令牌加入手牌"
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "获得1点力量与1点敏捷"
 }

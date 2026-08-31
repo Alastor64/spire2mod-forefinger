@@ -3,8 +3,10 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using STS2RitsuLib;
+using STS2RitsuLib.Content;
 using STS2RitsuLib.Interop;
 using STS2RitsuLib.Patching.Core;
+using Forefinger.Characters;
 using Forefinger.Game;
 
 namespace Forefinger;
@@ -23,6 +25,12 @@ public static class Entry
 
         Logger = RitsuLibFramework.CreateLogger(ModId);
         ModTypeDiscoveryHub.RegisterModAssembly(ModId, assembly);
+
+        // 指令池需要在百科-卡牌总览中显示；图标暂用游戏本体的无色能量图标。
+        ModContentRegistry.For(ModId)
+            .RegisterCardLibraryCompendiumSharedPoolFilter<ForefingerPrescriptCardPool>(
+                "forefinger_prescript_pool",
+                "res://images/atlases/ui_atlas.sprites/card/energy_colorless.tres");
 
         var characterSelectPatcher = RitsuLibFramework.CreatePatcher(ModId, "character_select_ui");
         characterSelectPatcher.RegisterPatch<CharacterSelectRelicDescriptionPatch>();

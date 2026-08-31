@@ -8,7 +8,6 @@ using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using Forefinger.Keywords;
 using STS2RitsuLib;
 using STS2RitsuLib.Interop.AutoRegistration;
 using STS2RitsuLib.Scaffolding.Content;
@@ -25,8 +24,6 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
     public override bool AllowNegative => false;
-
-    protected override IEnumerable<string> RegisteredKeywordIds => [ForefingerKeywords.NextExecutionId];
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
