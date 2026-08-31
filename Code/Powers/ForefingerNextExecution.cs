@@ -16,7 +16,8 @@ using STS2RitsuLib.Scaffolding.Content;
 namespace Forefinger.Powers;
 
 // 下回合执行：在下回合开始、抽牌前，把记录的指令牌复制若干张加入手牌。
-// 同一卡牌 ID 叠加，不同 ID 各自独立显示。加入的牌默认为未升级，且只在战斗内存在。
+// 按设计「不可叠加」：无论记录的卡牌 ID 是否相同，每次应用都新建独立实例、分开显示。
+// 只记录卡牌 ID；加入的牌默认为未升级，且只在战斗内存在；加完牌后移除自身。
 [RegisterPower]
 public sealed class ForefingerNextExecution : ModPowerTemplate
 {
@@ -32,33 +33,27 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
         new StringVar("Card", string.Empty),
     ];
 
-    public CardModel? SelectedCard => GetData().SelectedCard;
+    // 记录的卡牌 ID（设计文档：该效果需额外记录一个卡牌 ID）。
+    public ModelId? SelectedCardId => GetData().CardId;
 
-    public void SetSelectedCard(CardModel card)
+    public void SetSelectedCard(ModelId cardId)
     {
-        GetData().SelectedCard = card;
-        ((StringVar)DynamicVars["Card"]).StringValue = card.Title;
+        GetData().CardId = cardId;
+        // 只读注册表中已初始化模板的标题，避免在打出瞬间访问未初始化实例。
+        ((StringVar)DynamicVars["Card"]).StringValue =
+            ModelDb.GetByIdOrNull<CardModel>(cardId)?.Title ?? string.Empty;
     }
 
+    // 每次应用都新建一个独立实例（InstanceType.Instanced 本身不会合并），实现「不可叠加、分开显示」。
     public static async Task Apply(
         PlayerChoiceContext choiceContext,
         Creature target,
-        CardModel card,
+        ModelId cardId,
         int amount,
         CardModel cardSource)
     {
         if (amount <= 0)
         {
-            return;
-        }
-
-        ForefingerNextExecution? existing = target.Powers
-            .OfType<ForefingerNextExecution>()
-            .FirstOrDefault(power => power.SelectedCard?.GetType() == card.GetType());
-
-        if (existing is not null)
-        {
-            await PowerCmd.Apply(choiceContext, existing, target, amount, target, cardSource, silent: false);
             return;
         }
 
@@ -71,7 +66,7 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
             silent: false);
         if (created is not null)
         {
-            created.SetSelectedCard(card);
+            created.SetSelectedCard(cardId);
         }
     }
 
@@ -85,7 +80,8 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
             return;
         }
 
-        if (SelectedCard is not { } selectedCard || Amount <= 0)
+        if (SelectedCardId is not { } cardId || Amount <= 0
+            || ModelDb.GetByIdOrNull<CardModel>(cardId) is not { } template)
         {
             await PowerCmd.Remove(this);
             return;
@@ -97,7 +93,7 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
             nameof(ForefingerNextExecution));
 
         var generated = CardFactory
-            .GetForCombat(player, [selectedCard], Amount, rng)
+            .GetForCombat(player, [template], Amount, rng)
             .ToList();
 
         if (generated.Count > 0)
@@ -124,6 +120,6 @@ public sealed class ForefingerNextExecution : ModPowerTemplate
 
     private sealed class Data
     {
-        public CardModel? SelectedCard { get; set; }
+        public ModelId? CardId { get; set; }
     }
 }

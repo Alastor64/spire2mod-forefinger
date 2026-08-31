@@ -37,9 +37,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Remove=".godot/**;.idea/**;.vs/**;bin/**;obj/**;_ref/**"/>
-        <EmbeddedResource Remove=".godot/**;.idea/**;.vs/**;bin/**;obj/**;_ref/**"/>
-        <None Remove=".godot/**;.idea/**;.vs/**;bin/**;obj/**;_ref/**"/>
+        <Compile Remove=".godot/**;.idea/**;.vs/**;bin/**;obj/**;_ref/**;_diag/**"/>
+        <EmbeddedResource Remove=".godot/**;.idea/**;.vs/**;bin/**;obj/**;_ref/**;_diag/**"/>
+        <None Remove=".godot/**;.idea/**;.vs/**;bin/**;obj/**;_ref/**;_diag/**"/>
 
         <AdditionalFiles Include="resources/**/*.json"/>
 

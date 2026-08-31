@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 using Forefinger.Characters;
 using Forefinger.Keywords;
@@ -66,7 +67,7 @@ public sealed class ForefingerWillOfThePrescript : ModCardTemplate
         await ForefingerNextExecution.Apply(
             choiceContext,
             creature,
-            new ForefingerExecuteSkim(),
+            ModelDb.Get<ForefingerExecuteSkim>().Id,
             1,
             this);
     }
