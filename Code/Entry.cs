@@ -48,6 +48,10 @@ public static class Entry
         deadlineCostPatcher.RegisterPatch<DeadlineCostPatch>();
         deadlineCostPatcher.PatchAll();
 
+        var karmaPatcher = RitsuLibFramework.CreatePatcher(ModId, "run_start_relic");
+        karmaPatcher.RegisterPatch<KarmaAtRunStartPatch>();
+        karmaPatcher.PatchAll();
+
         CombatManager.Instance.CombatEnded += CombatEnchantTracker.OnCombatEnded;
 
         Logger.Info("Forefinger initialized.");
