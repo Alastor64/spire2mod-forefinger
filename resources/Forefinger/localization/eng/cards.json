@@ -37,5 +37,8 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "Deadline {Deadline}.\nThe target draws {Cards:diff()} cards.",
   "FOREFINGER_CARD_FOREFINGER_ADDICT.title": "Addict",
   "FOREFINGER_CARD_FOREFINGER_ADDICT.description": "Whenever you play a [gold]Prescript[/gold], draw 1 card.",
-  "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw 1 card."
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw 1 card.",
+  "FOREFINGER_CARD_FOREFINGER_FAITH.title": "Faith",
+  "FOREFINGER_CARD_FOREFINGER_FAITH.description": "If [gold]Hand Singleton[/gold], gain {Energy:energyIcons()}.",
+  "FOREFINGER_CARD_FOREFINGER_FAITH.smartDescription": "If Hand Singleton, gain {Energy:energyIcons()}."
 }

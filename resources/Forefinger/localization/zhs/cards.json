@@ -37,5 +37,8 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "指令期限{Deadline}\n使目标抽{Cards:diff()}张牌",
   "FOREFINGER_CARD_FOREFINGER_ADDICT.title": "成瘾",
   "FOREFINGER_CARD_FOREFINGER_ADDICT.description": "每打出一张[gold]指令[/gold]，抽一张牌",
-  "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "每打出一张指令，抽一张牌"
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "每打出一张指令，抽一张牌",
+  "FOREFINGER_CARD_FOREFINGER_FAITH.title": "信仰",
+  "FOREFINGER_CARD_FOREFINGER_FAITH.description": "若[gold]手牌独一[/gold]，获得{Energy:energyIcons()}",
+  "FOREFINGER_CARD_FOREFINGER_FAITH.smartDescription": "若手牌独一，获得{Energy:energyIcons()}"
 }
