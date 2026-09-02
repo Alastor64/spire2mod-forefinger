@@ -12,5 +12,7 @@
   "FOREFINGER_KEYWORD_UNLOCKING.title": "解禁中",
   "FOREFINGER_KEYWORD_UNLOCKING.description": "若至少有7层，获得剑刃解放\n回合结束时层数减1",
   "FOREFINGER_KEYWORD_BLADE_UNLOCKED.title": "剑刃解放",
-  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "获得1点力量与1点敏捷"
+  "FOREFINGER_KEYWORD_BLADE_UNLOCKED.description": "获得1点力量与1点敏捷",
+  "FOREFINGER_KEYWORD_STURDY.title": "坚固",
+  "FOREFINGER_KEYWORD_STURDY.description": "打出时获得对应层数的格挡"
 }

@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Enchantments;
 using Forefinger.Characters;
+using Forefinger.Enchantments;
 using Forefinger.Game;
 using STS2RitsuLib;
 using STS2RitsuLib.Interop.AutoRegistration;
@@ -13,7 +14,7 @@ using STS2RitsuLib.Scaffolding.Content;
 namespace Forefinger.Cards;
 
 // 指令预览：固有，打出后随机给卡组中一张未附魔的攻击牌附「锋利 1」、
-// 一张未附魔的技能牌附「灵巧 1」，然后消耗。升级后额外抽一张牌。
+// 一张未附魔的技能牌附「坚固 1」，然后消耗。升级后额外抽一张牌。
 // 附魔仅在本场战斗内生效，战斗结束统一清除。
 [RegisterCard(typeof(ForefingerCardPool))]
 [RegisterCharacterStarterCard(typeof(ForefingerCharacter), 1)]
@@ -40,7 +41,7 @@ public sealed class ForefingerSkimPrescript : ModCardTemplate
         var rng = RitsuLibFramework.GetModPlayerRng(Owner, Entry.ModId, nameof(ForefingerSkimPrescript));
 
         EnchantRandomCard<Sharp>(Owner, rng, CardType.Attack, combatState);
-        EnchantRandomCard<Nimble>(Owner, rng, CardType.Skill, combatState);
+        EnchantRandomCard<ForefingerSturdy>(Owner, rng, CardType.Skill, combatState);
 
         if (IsUpgraded)
         {
