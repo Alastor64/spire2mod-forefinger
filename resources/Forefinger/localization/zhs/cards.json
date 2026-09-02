@@ -34,5 +34,8 @@
   "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.smartDescription": "造成{Damage:diff()}点伤害\n获得{Block:diff()}点格挡\n若手牌独一，下回合向手中加入一张执行-检索",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.title": "执行-检索",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n使目标抽{Cards:diff()}张牌",
-  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "指令期限{Deadline}\n使目标抽{Cards:diff()}张牌"
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "指令期限{Deadline}\n使目标抽{Cards:diff()}张牌",
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.title": "成瘾",
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.description": "每打出一张[gold]指令[/gold]，抽一张牌",
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "每打出一张指令，抽一张牌"
 }

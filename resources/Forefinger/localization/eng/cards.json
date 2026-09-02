@@ -34,5 +34,8 @@
   "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_PRESCRIPT.smartDescription": "Deal {Damage:diff()} damage.\nGain {Block:diff()} Block.\nIf Hand Singleton, add an Execute Skim to your hand next turn.",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.title": "Execute Skim",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nThe target draws {Cards:diff()} cards.",
-  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "Deadline {Deadline}.\nThe target draws {Cards:diff()} cards."
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SKIM.smartDescription": "Deadline {Deadline}.\nThe target draws {Cards:diff()} cards.",
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.title": "Addict",
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.description": "Whenever you play a [gold]Prescript[/gold], draw 1 card.",
+  "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw 1 card."
 }

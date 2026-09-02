@@ -5,5 +5,8 @@
   "FOREFINGER_POWER_FOREFINGER_BLADE_UNLOCKED.description": "Gain 1 [gold]Strength[/gold] and 1 [gold]Dexterity[/gold].",
   "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.title": "Next Execution",
   "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.description": "Next turn, add [blue]{Amount}[/blue] [gold]{Card}[/gold] into your [gold]Hand[/gold].",
-  "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.smartDescription": "Next turn, add [blue]{Amount}[/blue] [gold]{Card}[/gold] into your [gold]Hand[/gold]."
+  "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.smartDescription": "Next turn, add [blue]{Amount}[/blue] [gold]{Card}[/gold] into your [gold]Hand[/gold].",
+  "FOREFINGER_POWER_FOREFINGER_ADDICT.title": "Addict",
+  "FOREFINGER_POWER_FOREFINGER_ADDICT.description": "Whenever you play a [gold]Prescript[/gold], draw [blue]{Amount}[/blue] card(s).",
+  "FOREFINGER_POWER_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw {Amount} card(s)."
 }
