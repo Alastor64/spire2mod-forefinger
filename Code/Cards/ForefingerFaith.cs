@@ -10,12 +10,12 @@ using STS2RitsuLib.Scaffolding.Content;
 
 namespace Forefinger.Cards;
 
-// 信仰：若[手牌独一]，获得 3 点能量。升级后 3→4。
+// 信仰：若[手牌独一]，获得 2 点能量。升级后 2→3。
 // 判定时机是打出后：此时这张牌已进入运行区，所以不把自己算进判定范围。
 [RegisterCard(typeof(ForefingerCardPool))]
 public sealed class ForefingerFaith : ModCardTemplate
 {
-    private const int BaseEnergyGain = 3;
+    private const int BaseEnergyGain = 2;
 
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
     [
