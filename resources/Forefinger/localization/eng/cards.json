@@ -43,5 +43,8 @@
   "FOREFINGER_CARD_FOREFINGER_FAITH.smartDescription": "If Hand Singleton, gain {Energy:energyIcons()}.",
   "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.title": "Binding Chains",
   "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.description": "ALL enemies lose {StrengthPower:diff()} [gold]Strength[/gold].\nIf [gold]Hand Singleton[/gold], ALL enemies lose {DarkShacklesPower:diff()} [gold]Strength[/gold] this turn.",
-  "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.smartDescription": "ALL enemies lose {StrengthPower:diff()} Strength.\nIf Hand Singleton, ALL enemies lose {DarkShacklesPower:diff()} Strength this turn."
+  "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.smartDescription": "ALL enemies lose {StrengthPower:diff()} Strength.\nIf Hand Singleton, ALL enemies lose {DarkShacklesPower:diff()} Strength this turn.",
+  "FOREFINGER_CARD_FOREFINGER_ABSURDITY.title": "Absurdity",
+  "FOREFINGER_CARD_FOREFINGER_ABSURDITY.description": "If the number of cards in your hand is even, gain {Block:diff()} [gold]Block[/gold].\nIf the number of cards in your hand is odd, gain {ForefingerAbsurdity:diff()} [gold]Dexterity[/gold] next turn.",
+  "FOREFINGER_CARD_FOREFINGER_ABSURDITY.smartDescription": "If the number of cards in your hand is even, gain {Block:diff()} Block.\nIf the number of cards in your hand is odd, gain {ForefingerAbsurdity:diff()} Dexterity next turn."
 }

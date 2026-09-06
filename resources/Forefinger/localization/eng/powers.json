@@ -8,5 +8,8 @@
   "FOREFINGER_POWER_FOREFINGER_NEXT_EXECUTION.smartDescription": "Next turn, add [blue]{Amount}[/blue] [gold]{Card}[/gold] into your [gold]Hand[/gold].",
   "FOREFINGER_POWER_FOREFINGER_ADDICT.title": "Addict",
   "FOREFINGER_POWER_FOREFINGER_ADDICT.description": "Whenever you play a [gold]Prescript[/gold], draw [blue]{Amount}[/blue] card(s).",
-  "FOREFINGER_POWER_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw {Amount} card(s)."
+  "FOREFINGER_POWER_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw {Amount} card(s).",
+  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.title": "Absurdity",
+  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.description": "At the start of your next turn, gain [blue]{Amount}[/blue] [gold]Temporary Dexterity[/gold].",
+  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.smartDescription": "At the start of your next turn, gain {Amount} Temporary Dexterity."
 }
