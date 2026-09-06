@@ -40,5 +40,8 @@
   "FOREFINGER_CARD_FOREFINGER_ADDICT.smartDescription": "每打出一张指令，抽一张牌",
   "FOREFINGER_CARD_FOREFINGER_FAITH.title": "信仰",
   "FOREFINGER_CARD_FOREFINGER_FAITH.description": "若[gold]手牌独一[/gold]，获得{Energy:energyIcons()}",
-  "FOREFINGER_CARD_FOREFINGER_FAITH.smartDescription": "若手牌独一，获得{Energy:energyIcons()}"
+  "FOREFINGER_CARD_FOREFINGER_FAITH.smartDescription": "若手牌独一，获得{Energy:energyIcons()}",
+  "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.title": "铁索捆缚",
+  "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.description": "所有敌人失去{StrengthPower:diff()}点[gold]力量[/gold]\n若[gold]手牌独一[/gold]，所有敌人在本回合失去{DarkShacklesPower:diff()}点[gold]力量[/gold]",
+  "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.smartDescription": "所有敌人失去{StrengthPower:diff()}点力量\n若手牌独一，所有敌人在本回合失去{DarkShacklesPower:diff()}点力量"
 }
