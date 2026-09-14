@@ -46,5 +46,8 @@
   "FOREFINGER_CARD_FOREFINGER_BINDING_CHAINS.smartDescription": "所有敌人失去{StrengthPower:diff()}点力量\n若手牌独一，所有敌人在本回合失去{DarkShacklesPower:diff()}点力量",
   "FOREFINGER_CARD_FOREFINGER_ABSURDITY.title": "荒诞",
   "FOREFINGER_CARD_FOREFINGER_ABSURDITY.description": "若手牌数为偶数，获得{Block:diff()}点[gold]格挡[/gold]\n若手牌数为奇数，下回合临时获得{ForefingerAbsurdity:diff()}点[gold]敏捷[/gold]",
-  "FOREFINGER_CARD_FOREFINGER_ABSURDITY.smartDescription": "若手牌数为偶数，获得{Block:diff()}点格挡\n若手牌数为奇数，下回合临时获得{ForefingerAbsurdity:diff()}点敏捷"
+  "FOREFINGER_CARD_FOREFINGER_ABSURDITY.smartDescription": "若手牌数为偶数，获得{Block:diff()}点格挡\n若手牌数为奇数，下回合临时获得{ForefingerAbsurdity:diff()}点敏捷",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_SPIRE.title": "尖塔之意",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_SPIRE.description": "对所有敌人造成{Damage:diff()}点伤害\n所有玩家获得{Block:diff()}点[gold]格挡[/gold]\n抽{Cards:diff()}张牌\n获得{Energy:energyIcons()}",
+  "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_SPIRE.smartDescription": "对所有敌人造成{Damage:diff()}点伤害\n所有玩家获得{Block:diff()}点格挡\n抽{Cards:diff()}张牌\n获得{Energy:energyIcons()}"
 }
