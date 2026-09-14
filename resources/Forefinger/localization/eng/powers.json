@@ -11,5 +11,10 @@
   "FOREFINGER_POWER_FOREFINGER_ADDICT.smartDescription": "Whenever you play a Prescript, draw {Amount} card(s).",
   "FOREFINGER_POWER_FOREFINGER_ABSURDITY.title": "Absurdity",
   "FOREFINGER_POWER_FOREFINGER_ABSURDITY.description": "At the start of your next turn, gain [blue]{Amount}[/blue] [gold]Temporary Dexterity[/gold].",
-  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.smartDescription": "At the start of your next turn, gain {Amount} Temporary Dexterity."
+  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.smartDescription": "At the start of your next turn, gain {Amount} Temporary Dexterity.",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.title": "Self Suggestion",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.description": "Increase your hand size by [blue]{Amount}[/blue].",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescription": "Increase your hand size by {Amount}.",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.descriptionDown": "Decrease your hand size by [blue]{Amount:abs()}[/blue].",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescriptionDown": "Decrease your hand size by {Amount:abs()}."
 }

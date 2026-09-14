@@ -11,5 +11,10 @@
   "FOREFINGER_POWER_FOREFINGER_ADDICT.smartDescription": "每打出一张指令，抽{Amount}张牌",
   "FOREFINGER_POWER_FOREFINGER_ABSURDITY.title": "荒诞",
   "FOREFINGER_POWER_FOREFINGER_ABSURDITY.description": "下回合开始时，获得[blue]{Amount}[/blue]层临时[gold]敏捷[/gold]。",
-  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.smartDescription": "下回合开始时，获得{Amount}层临时敏捷。"
+  "FOREFINGER_POWER_FOREFINGER_ABSURDITY.smartDescription": "下回合开始时，获得{Amount}层临时敏捷。",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.title": "心理暗示",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.description": "手牌上限增加[blue]{Amount}[/blue]",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescription": "手牌上限增加{Amount}",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.descriptionDown": "手牌上限减少[blue]{Amount:abs()}[/blue]",
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescriptionDown": "手牌上限减少{Amount:abs()}"
 }

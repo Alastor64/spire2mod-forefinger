@@ -44,6 +44,17 @@ public static class Entry
         handGlowPatcher.RegisterPatch<HandGlowRefreshPatch>();
         handGlowPatcher.PatchAll();
 
+        // 「心理暗示」会改手牌上限，并让手牌已满时费用为 0：前者要改原版静态常量，
+        // 后者要在手牌内容变化后重刷费用显示。
+        var handLimitPatcher = RitsuLibFramework.CreatePatcher(ModId, "hand_limit");
+        handLimitPatcher.RegisterPatch<HandLimitPatch>();
+        handLimitPatcher.RegisterPatch<HandLimitScopePatch>();
+        handLimitPatcher.PatchAll();
+
+        var handVisualPatcher = RitsuLibFramework.CreatePatcher(ModId, "hand_visual_refresh");
+        handVisualPatcher.RegisterPatch<HandVisualRefreshPatch>();
+        handVisualPatcher.PatchAll();
+
         var deadlineCostPatcher = RitsuLibFramework.CreatePatcher(ModId, "deadline_cost");
         deadlineCostPatcher.RegisterPatch<DeadlineCostPatch>();
         deadlineCostPatcher.PatchAll();

@@ -1,4 +1,3 @@
-using MegaCrit.Sts2.Core.Nodes.Cards.Holders;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using STS2RitsuLib.Patching.Models;
 
@@ -22,29 +21,5 @@ public sealed class HandGlowRefreshPatch : IPatchMethod
         PatchTarget.Method<NTargetManager>(nameof(NTargetManager.FinishTargeting), typeof(bool)),
     ];
 
-    public static void Postfix() => RefreshHandGlow();
-
-    private static void RefreshHandGlow()
-    {
-        if (NPlayerHand.Instance is not { } hand)
-        {
-            return;
-        }
-
-        var holders = new List<NHandCardHolder>(hand.Holders);
-        if (hand._holdersAwaitingQueue is { } awaitingQueue)
-        {
-            holders.AddRange(awaitingQueue);
-        }
-
-        if (hand.FocusedHolder is { } focused)
-        {
-            holders.Add(focused);
-        }
-
-        foreach (NHandCardHolder holder in holders.Distinct())
-        {
-            holder.UpdateCard();
-        }
-    }
+    public static void Postfix() => HandCards.RefreshVisuals();
 }
