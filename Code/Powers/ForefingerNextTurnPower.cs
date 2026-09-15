@@ -45,7 +45,16 @@ public abstract class ForefingerNextTurnPower<TPower> : ModPowerTemplate
 
         try
         {
-            await PowerCmd.Apply<TPower>(choiceContext, Owner, Amount, Owner, null, silent: false);
+            var applied = await PowerCmd.Apply<TPower>(choiceContext, Owner, Amount, Owner, null, silent: false);
+
+            // 原版 PowerCmd.Apply 会给「施加到玩家身上的减益」自动置上 SkipNextDurationTick，
+            // 让紧接着的那次扣层被跳过一次（怪物在敌方回合给你的易伤，因此不会当场掉光）。
+            // 本模组的延迟效果是下回合另起的一份、且目标只会是玩家，不该享受这份宽限：
+            // 不清掉的话，1 层易伤会多活一整个敌方回合，等于被多打一次加伤。
+            if (applied is not null)
+            {
+                applied.SkipNextDurationTick = false;
+            }
         }
         finally
         {
