@@ -1,6 +1,5 @@
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -15,6 +14,8 @@ namespace Forefinger.Powers;
 // 2. 在持有者的下回合开始（抽牌前）把全部层数一次性转成等量份的 TPower，然后移除自身。
 // 3. 自己是 buff 还是 debuff 不在这里写死，而是跟着 TPower 走：
 //    施加增益（临时敏捷）就是 buff，施加减益（脆弱、易伤）就是 debuff。
+// 注意：打出时施加的是这份延迟效果本身，由卡牌直接写 PowerCmd.Apply<具体的延迟效果>()；
+// 不能写成 Apply<TPower>，那会当场施加它下回合才该兑现的那份效果。
 public abstract class ForefingerNextTurnPower<TPower> : ModPowerTemplate
     where TPower : PowerModel
 {
@@ -25,21 +26,6 @@ public abstract class ForefingerNextTurnPower<TPower> : ModPowerTemplate
     public override PowerStackType StackType => PowerStackType.Counter;
 
     public override bool AllowNegative => false;
-
-    // 打出时施加本延迟效果，层数不大于 0 时不施加。
-    public static async Task Apply(
-        PlayerChoiceContext choiceContext,
-        Creature target,
-        decimal amount,
-        CardModel cardSource)
-    {
-        if (amount <= 0)
-        {
-            return;
-        }
-
-        await PowerCmd.Apply<TPower>(choiceContext, target, amount, target, cardSource, silent: false);
-    }
 
     public override async Task BeforeHandDraw(
         Player player,

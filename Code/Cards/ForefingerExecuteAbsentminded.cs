@@ -1,3 +1,4 @@
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -33,10 +34,11 @@ public sealed class ForefingerExecuteAbsentminded : ForefingerDeadlineCard
             return;
         }
 
-        await Powers.ForefingerAbsentminded.Apply(
+        await PowerCmd.Apply<Powers.ForefingerAbsentminded>(
             choiceContext,
             targetCreature,
             DynamicVars["ForefingerAbsentminded"].BaseValue,
+            targetCreature,
             this);
     }
 

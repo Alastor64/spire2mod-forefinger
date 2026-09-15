@@ -47,10 +47,11 @@ public sealed class ForefingerAbsurdity : ModCardTemplate
             return;
         }
 
-        await Forefinger.Powers.ForefingerAbsurdity.Apply(
+        await PowerCmd.Apply<Forefinger.Powers.ForefingerAbsurdity>(
             choiceContext,
             creature,
             DynamicVars["ForefingerAbsurdity"].BaseValue,
+            creature,
             this);
     }
 
