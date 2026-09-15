@@ -106,6 +106,18 @@ public abstract class ForefingerDeadlineCard : ModCardTemplate
         return DynamicVars[DeadlineVarName].IntValue;
     }
 
+    // 「执行-」系列中对象为「任意玩家」的牌共用：把卡牌选中的目标解析为对应的玩家实体，
+    // 没有目标、或目标无法映射到玩家时默认取自己。
+    protected Player? ResolveTargetPlayer(Creature? target)
+    {
+        if (target is null || CombatState is not { } combatState)
+        {
+            return Owner;
+        }
+
+        return combatState.Players.FirstOrDefault(player => player.Creature == target) ?? Owner;
+    }
+
     protected void SetDeadline(decimal value)
     {
         DynamicVars[DeadlineVarName].BaseValue = value;
