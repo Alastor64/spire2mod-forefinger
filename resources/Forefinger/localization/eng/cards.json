@@ -67,5 +67,8 @@
   "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "Gain {Block:diff()} Block for each enemy.",
   "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.title": "See No Evil",
   "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.description": "Discard all Status cards in your [gold]Hand[/gold].",
-  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "Discard all Status cards in your Hand."
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "Discard all Status cards in your Hand.",
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.title": "God Favor",
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.description": "Add random [gold]Prescripts[/gold] into your [gold]Hand[/gold] until your [gold]Hand[/gold] is full.",
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.smartDescription": "Add random Prescripts into your Hand until your Hand is full."
 }

@@ -67,5 +67,8 @@
   "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "每有一名敌人，获得{Block:diff()}点格挡",
   "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.title": "非礼勿视",
   "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.description": "丢弃你[gold]手牌[/gold]中的所有状态牌。",
-  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "丢弃你手牌中的所有状态牌"
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "丢弃你手牌中的所有状态牌",
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.title": "眷顾",
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.description": "将随机[gold]指令[/gold]加入你的[gold]手牌[/gold]，直到手牌已满。",
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.smartDescription": "将随机指令加入你的手牌，直到手牌已满。"
 }
