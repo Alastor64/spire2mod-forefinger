@@ -70,5 +70,20 @@
   "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "丢弃你手牌中的所有状态牌",
   "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.title": "眷顾",
   "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.description": "将随机[gold]指令[/gold]加入你的[gold]手牌[/gold]，直到手牌已满。",
-  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.smartDescription": "将随机指令加入你的手牌，直到手牌已满。"
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.smartDescription": "将随机指令加入你的手牌，直到手牌已满。",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SLASH.title": "执行-劈砍",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SLASH.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n造成{Damage:diff()}点伤害。",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SLASH.smartDescription": "指令期限{Deadline}\n造成{Damage:diff()}点伤害",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXTERMINATE.title": "执行-杀灭",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXTERMINATE.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n对所有敌人造成{Damage:diff()}点伤害{Repeat:diff()}次",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXTERMINATE.smartDescription": "指令期限{Deadline}\n对所有敌人造成{Damage:diff()}点伤害{Repeat:diff()}次",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_DODGE.title": "执行-躲闪",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_DODGE.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n使目标获得{Block:diff()}点[gold]格挡[/gold]。",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_DODGE.smartDescription": "指令期限{Deadline}\n使目标获得{Block:diff()}点格挡",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.title": "执行-观察",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n使目标抽{Cards:diff()}张牌。",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.smartDescription": "指令期限{Deadline}\n使目标抽{Cards:diff()}张牌",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.title": "执行-断指",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n使其失去{HpLoss:diff()}生命{Repeat:diff()}次",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.smartDescription": "指令期限{Deadline}\n使其失去{HpLoss:diff()}生命{Repeat:diff()}次"
 }

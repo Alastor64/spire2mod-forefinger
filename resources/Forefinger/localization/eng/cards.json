@@ -70,5 +70,20 @@
   "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "Discard all Status cards in your Hand.",
   "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.title": "God Favor",
   "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.description": "Add random [gold]Prescripts[/gold] into your [gold]Hand[/gold] until your [gold]Hand[/gold] is full.",
-  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.smartDescription": "Add random Prescripts into your Hand until your Hand is full."
+  "FOREFINGER_CARD_FOREFINGER_GOD_FAVOR.smartDescription": "Add random Prescripts into your Hand until your Hand is full.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SLASH.title": "Execute Slash",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SLASH.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nDeal {Damage:diff()} damage.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_SLASH.smartDescription": "Deadline {Deadline}.\nDeal {Damage:diff()} damage.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXTERMINATE.title": "Execute Exterminate",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXTERMINATE.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nDeal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXTERMINATE.smartDescription": "Deadline {Deadline}.\nDeal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_DODGE.title": "Execute Dodge",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_DODGE.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nThe target gains {Block:diff()} [gold]Block[/gold].",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_DODGE.smartDescription": "Deadline {Deadline}.\nThe target gains {Block:diff()} Block.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.title": "Execute Examine",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nThe target draws {Cards:diff()} cards.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.smartDescription": "Deadline {Deadline}.\nThe target draws {Cards:diff()} cards.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.title": "Execute Fingercut",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nThe target loses {HpLoss:diff()} HP {Repeat:diff()} times.",
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.smartDescription": "Deadline {Deadline}.\nThe target loses {HpLoss:diff()} HP {Repeat:diff()} times."
 }
