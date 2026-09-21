@@ -5,7 +5,8 @@ namespace Forefinger.Game;
 
 // 手牌发光若依赖「悬停敌人」（如斩杀指令），原版只在状态变化时刷新发光
 // （NHandCardHolder.UpdateCard），悬停变化不会触发刷新，导致悬停到新敌人时
-// 发光停留在旧状态。这里在悬停进入/离开生物、以及瞄准结束时强制刷新所有手牌发光。
+// 发光停留在旧状态。这里在悬停进入/离开生物、以及瞄准结束时请求重刷手牌发光；
+// 请求由 HandCards 合并成每帧一次，瞄准时鼠标连续扫过多个敌人也不会反复整手重刷。
 // 注意：拖出瞄准中的卡牌会被移入 _holdersAwaitingQueue，不在 Hand.Holders 里，
 // 所以刷新集合要把这些额外来源一并纳入，否则被拖的那张卡永远刷不到。
 public sealed class HandGlowRefreshPatch : IPatchMethod
@@ -21,5 +22,5 @@ public sealed class HandGlowRefreshPatch : IPatchMethod
         PatchTarget.Method<NTargetManager>(nameof(NTargetManager.FinishTargeting), typeof(bool)),
     ];
 
-    public static void Postfix() => HandCards.RefreshVisuals();
+    public static void Postfix() => HandCards.RequestRefresh();
 }
