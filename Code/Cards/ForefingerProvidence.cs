@@ -14,8 +14,10 @@ namespace Forefinger.Cards;
 // 「一次」是逐敌独立结算：有几名敌人就获得几次格挡，而不是一次性拿 6×敌人数。
 // 因此每次结算各吃一次敏捷加成，也各触发一次原版「获得格挡时」的效果（Hook.AfterBlockGained）。
 // 敌人口径与原版「所有敌人」一致（存活且可被攻击），爪牙/幻影只要可被攻击就算一名。
-// 与「寒冰」这种逐敌结算的牌同样处理：连续多次获得格挡，按原版 CreatureCmd.GainBlock
-// 的说明传 fast: true，收掉每次之间多余的等待。
+// 逐次结算要看得见：CreatureCmd.GainBlock 的 fast 参数只在「打牌之外的被动触发」里用
+// （原版注释点名残影、藤壶管道），它把每次获得格挡后的等待压到 0.03 秒，视觉上就并成了一次。
+// 原版同样「一次打牌多次获得格挡」的死门就是不传 fast、每次各等 0.1~0.25 秒逐次播放，
+// 这里照它的做法走默认值。
 [RegisterCard(typeof(ForefingerCardPool))]
 public sealed class ForefingerProvidence : ModCardTemplate
 {
@@ -44,7 +46,7 @@ public sealed class ForefingerProvidence : ModCardTemplate
         int enemyCount = combatState.HittableEnemies.Count;
         for (int i = 0; i < enemyCount; i++)
         {
-            await CreatureCmd.GainBlock(creature, DynamicVars.Block, cardPlay, fast: true);
+            await CreatureCmd.GainBlock(creature, DynamicVars.Block, cardPlay);
         }
     }
 
