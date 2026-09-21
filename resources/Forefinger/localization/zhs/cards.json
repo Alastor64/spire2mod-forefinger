@@ -64,5 +64,8 @@
   "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.smartDescription": "手牌上限增加{ForefingerSelfSuggestion:diff()}\n若手牌已满，费用降为0",
   "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.title": "护佑",
   "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.description": "每有一名敌人，获得{Block:diff()}点[gold]格挡[/gold]。",
-  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "每有一名敌人，获得{Block:diff()}点格挡"
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "每有一名敌人，获得{Block:diff()}点格挡",
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.title": "非礼勿视",
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.description": "丢弃你[gold]手牌[/gold]中的所有状态牌。",
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "丢弃你手牌中的所有状态牌"
 }

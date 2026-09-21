@@ -64,5 +64,8 @@
   "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.smartDescription": "Increase your hand size by {ForefingerSelfSuggestion:diff()}.\nIf your hand is full, this costs 0.",
   "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.title": "Providence",
   "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.description": "Gain {Block:diff()} [gold]Block[/gold] for each enemy.",
-  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "Gain {Block:diff()} Block for each enemy."
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "Gain {Block:diff()} Block for each enemy.",
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.title": "See No Evil",
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.description": "Discard all Status cards in your [gold]Hand[/gold].",
+  "FOREFINGER_CARD_FOREFINGER_SEE_NO_EVIL.smartDescription": "Discard all Status cards in your Hand."
 }
