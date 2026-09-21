@@ -3,8 +3,8 @@
   "FOREFINGER_CARD_FOREFINGER_STRIKE.description": "造成 {Damage:diff()} 点伤害。",
   "FOREFINGER_CARD_FOREFINGER_STRIKE.smartDescription": "造成 {Damage:diff()} 点伤害。",
   "FOREFINGER_CARD_FOREFINGER_DEFEND.title": "防御",
-  "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "获得 {Block:diff()} 点格挡。",
-  "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "获得 {Block:diff()} 点格挡。",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "获得{Block:diff()}点格挡",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.title": "信仰之刃",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "若[gold]手牌独一[/gold]，造成{CalculatedDamage:diff()}点伤害\n每有一张手牌就使伤害加{ExtraDamage:diff()}",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.smartDescription": "若手牌独一，造成{CalculatedDamage:diff()}点伤害\n每有一张手牌就使伤害加{ExtraDamage:diff()}",
@@ -61,5 +61,8 @@
   "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_SPIRE.smartDescription": "对所有敌人造成{Damage:diff()}点伤害\n所有玩家获得{Block:diff()}点格挡\n抽{Cards:diff()}张牌\n获得{Energy:energyIcons()}",
   "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.title": "心理暗示",
   "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.description": "手牌上限增加{ForefingerSelfSuggestion:diff()}\n若手牌已满，费用降为[blue]0[/blue]",
-  "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.smartDescription": "手牌上限增加{ForefingerSelfSuggestion:diff()}\n若手牌已满，费用降为0"
+  "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.smartDescription": "手牌上限增加{ForefingerSelfSuggestion:diff()}\n若手牌已满，费用降为0",
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.title": "护佑",
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.description": "每有一名敌人，获得{Block:diff()}点[gold]格挡[/gold]。",
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "每有一名敌人，获得{Block:diff()}点格挡"
 }

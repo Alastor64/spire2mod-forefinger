@@ -3,7 +3,7 @@
   "FOREFINGER_CARD_FOREFINGER_STRIKE.description": "Deal {Damage:diff()} damage.",
   "FOREFINGER_CARD_FOREFINGER_STRIKE.smartDescription": "Deal {Damage:diff()} damage.",
   "FOREFINGER_CARD_FOREFINGER_DEFEND.title": "Defend",
-  "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "Gain {Block:diff()} Block.",
+  "FOREFINGER_CARD_FOREFINGER_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "FOREFINGER_CARD_FOREFINGER_DEFEND.smartDescription": "Gain {Block:diff()} Block.",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.title": "Blade of Faith",
   "FOREFINGER_CARD_FOREFINGER_BLADE_OF_FAITH.description": "If [gold]Hand Singleton[/gold], deal {CalculatedDamage:diff()} damage.\nEach card in your hand adds {ExtraDamage:diff()} damage.",
@@ -61,5 +61,8 @@
   "FOREFINGER_CARD_FOREFINGER_WILL_OF_THE_SPIRE.smartDescription": "Deal {Damage:diff()} damage to ALL enemies.\nAll players gain {Block:diff()} Block.\nDraw {Cards:diff()} cards.\nGain {Energy:energyIcons()}.",
   "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.title": "Self Suggestion",
   "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.description": "Increase your hand size by {ForefingerSelfSuggestion:diff()}.\nIf your hand is full, this costs [blue]0[/blue].",
-  "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.smartDescription": "Increase your hand size by {ForefingerSelfSuggestion:diff()}.\nIf your hand is full, this costs 0."
+  "FOREFINGER_CARD_FOREFINGER_SELF_SUGGESTION.smartDescription": "Increase your hand size by {ForefingerSelfSuggestion:diff()}.\nIf your hand is full, this costs 0.",
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.title": "Providence",
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.description": "Gain {Block:diff()} [gold]Block[/gold] for each enemy.",
+  "FOREFINGER_CARD_FOREFINGER_PROVIDENCE.smartDescription": "Gain {Block:diff()} Block for each enemy."
 }
