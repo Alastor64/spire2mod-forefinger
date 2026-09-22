@@ -64,6 +64,7 @@ public static class Entry
         karmaPatcher.PatchAll();
 
         CombatManager.Instance.CombatEnded += CombatEnchantTracker.OnCombatEnded;
+        CombatManager.Instance.CombatEnded += CombatPrescriptUpgrade.OnCombatEnded;
 
         Logger.Info("Forefinger initialized.");
     }

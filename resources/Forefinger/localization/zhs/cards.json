@@ -85,5 +85,8 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.smartDescription": "指令期限{Deadline}\n使目标抽{Cards:diff()}张牌",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.title": "执行-断指",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.description": "[gold]指令期限[/gold][blue]{Deadline}[/blue]\n使其失去{HpLoss:diff()}生命{Repeat:diff()}次",
-  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.smartDescription": "指令期限{Deadline}\n使其失去{HpLoss:diff()}生命{Repeat:diff()}次"
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.smartDescription": "指令期限{Deadline}\n使其失去{HpLoss:diff()}生命{Repeat:diff()}次",
+  "FOREFINGER_CARD_FOREFINGER_MESSENGER.title": "传令员",
+  "FOREFINGER_CARD_FOREFINGER_MESSENGER.description": "在本场战斗中，升级所有[gold]指令[/gold]\n手牌上限加[blue]2[/blue]",
+  "FOREFINGER_CARD_FOREFINGER_MESSENGER.smartDescription": "在本场战斗中，升级所有指令\n手牌上限加2"
 }

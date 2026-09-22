@@ -25,5 +25,8 @@
   "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.description": "手牌上限增加[blue]{Amount}[/blue]",
   "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescription": "手牌上限增加{Amount}",
   "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.descriptionDown": "手牌上限减少[blue]{Amount:abs()}[/blue]",
-  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescriptionDown": "手牌上限减少{Amount:abs()}"
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescriptionDown": "手牌上限减少{Amount:abs()}",
+  "FOREFINGER_POWER_FOREFINGER_MESSENGER.title": "传令员",
+  "FOREFINGER_POWER_FOREFINGER_MESSENGER.description": "在本场战斗中，升级所有[gold]指令[/gold]",
+  "FOREFINGER_POWER_FOREFINGER_MESSENGER.smartDescription": "在本场战斗中，升级所有指令"
 }

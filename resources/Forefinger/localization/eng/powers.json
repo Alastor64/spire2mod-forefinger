@@ -25,5 +25,8 @@
   "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.description": "Increase your hand size by [blue]{Amount}[/blue].",
   "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescription": "Increase your hand size by {Amount}.",
   "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.descriptionDown": "Decrease your hand size by [blue]{Amount:abs()}[/blue].",
-  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescriptionDown": "Decrease your hand size by {Amount:abs()}."
+  "FOREFINGER_POWER_FOREFINGER_SELF_SUGGESTION.smartDescriptionDown": "Decrease your hand size by {Amount:abs()}.",
+  "FOREFINGER_POWER_FOREFINGER_MESSENGER.title": "Messenger",
+  "FOREFINGER_POWER_FOREFINGER_MESSENGER.description": "This combat, upgrade all your [gold]Prescripts[/gold].",
+  "FOREFINGER_POWER_FOREFINGER_MESSENGER.smartDescription": "This combat, upgrade all your Prescripts."
 }

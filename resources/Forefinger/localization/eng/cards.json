@@ -85,5 +85,8 @@
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_EXAMINE.smartDescription": "Deadline {Deadline}.\nThe target draws {Cards:diff()} cards.",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.title": "Execute Fingercut",
   "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.description": "[gold]Deadline[/gold][blue]{Deadline}[/blue].\nThe target loses {HpLoss:diff()} HP {Repeat:diff()} times.",
-  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.smartDescription": "Deadline {Deadline}.\nThe target loses {HpLoss:diff()} HP {Repeat:diff()} times."
+  "FOREFINGER_CARD_FOREFINGER_EXECUTE_FINGERCUT.smartDescription": "Deadline {Deadline}.\nThe target loses {HpLoss:diff()} HP {Repeat:diff()} times.",
+  "FOREFINGER_CARD_FOREFINGER_MESSENGER.title": "Messenger",
+  "FOREFINGER_CARD_FOREFINGER_MESSENGER.description": "This combat, upgrade all your [gold]Prescripts[/gold].\nIncrease your hand size by [blue]2[/blue].",
+  "FOREFINGER_CARD_FOREFINGER_MESSENGER.smartDescription": "This combat, upgrade all your Prescripts.\nIncrease your hand size by 2."
 }
